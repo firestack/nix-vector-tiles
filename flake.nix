@@ -5,7 +5,7 @@
     utils.url = "github:numtide/flake-utils";
     map-sprite-packer = {
       url = "github:jmpunkt/map-sprite-packer";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "/nixpkgs";
       inputs.utils.follows = "utils";
     };
   };
