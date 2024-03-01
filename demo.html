@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html class="stretch">
   <head>
     <script src="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.js"></script>
     <link
       href="https://unpkg.com/maplibre-gl@latest/dist/maplibre-gl.css"
       rel="stylesheet"
     />
+	 <style>
+		.stretch {
+		  margin: 0;
+		  padding: 0;
+			width: 100%;
+			height: 100%;
+		}
+	 </style>
   </head>
 
-  <body>
-    <div id="map" style="width: 800px; height: 800px"></div>
+  <body class="stretch">
+    <div id="map" class="stretch"></div>
     <script>
       var map = new maplibregl.Map({
         container: "map",
