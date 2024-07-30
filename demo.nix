@@ -1,16 +1,15 @@
 {
   symlinkJoin,
+  linkFarm,
   writeShellScriptBin,
-  runCommand,
   miniserve,
   buildNpmPackage,
   fetchFromGitHub,
   callPackage,
 }: {bundle}: let
-  demo-html = runCommand "demo-tiles" {} ''
-    mkdir -p $out/share/www/
-    cp ${./demo.html} $out/share/www/index.html
-  '';
+  demo-html = linkFarm "" {
+    "share/www/index.html" = ./demo.html;
+  };
   serve = symlinkJoin {
     name = "combined-demo";
     paths = [demo-html bundle];
