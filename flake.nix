@@ -20,6 +20,7 @@
     buildForSystem = system: let
       overlays = [self.overlays.default];
       pkgs = import nixpkgs {inherit system overlays;};
+      self' = pkgs.callPackage ./scope.nix { makeScope = pkgs.lib.makeScope; };
       germany = {
         name = "germany";
         continent = "europe";
@@ -88,7 +89,7 @@
       legacyPackages = {
         # styles = lib.mapAttrs () pkgs.tilesStyles
         inherit (pkgs) tilesStyles;
-      };
+      } // self';
       apps = builtins.foldl' (left: right: left // right) {} (map (
           key: {
             "demo-local-${key}" = {
