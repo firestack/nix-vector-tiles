@@ -1,60 +1,65 @@
-{
-  stdenv,
-  writeText,
-  jq,
-  mbutil,
-  tilemaker,
-  unzip,
-  osmium-tool,
-}: {
-  name,
-  src,
-  config ? {},
-  renumber ? false,
-}: let
-  tilemaker-config =
-    writeText "app-config.json" (builtins.toJSON
-      ({settings = {compress = "none";};} // config));
-  args =
-    if renumber
-    then "--compact"
-    else "";
-  isCompressed =
-    (builtins.hasAttr "settings" config)
-    && (builtins.hasAttr "compress" config.settings)
-    && config.settings.compress != "none";
-  # then ''find tiles -name '*.pbf' -exec sh -c 'echo "$1" "$1.gz"' - '{}' +''
-in
-  stdenv.mkDerivation {
+{ lib
+, runCommand
+, stdenv
+, writeText
+, jq
+, mbutil
+, tilemaker
+, unzip
+, osmium-tool
+, tilemaker-shp-files
+}:
+{ name
+, extension ? "pmtiles"
+, src
+, config ? {}
+, renumber ? false
+}: stdenv.mkDerivation rec {
     inherit src;
-    name = "${src}-tiles";
+    name = "${src.name or ""}.${extension}";
 
-    unpackPhase = "true";
+    # unpackPhase = "true";
 
-    buildInputs = [jq mbutil tilemaker unzip osmium-tool];
+    buildInputs = [jq mbutil tilemaker unzip];
+
+    passthru.tilemaker-config =
+      writeText "app-config.json" (
+        builtins.toJSON ({settings.compress = "none";} // config)
+      );
+
+    passthru.config = runCommand "tilemaker-config.json" {
+      buildInputs = [ jq ];
+    } ''
+      jq -c '. * input' \
+        ${tilemaker}/share/tilemaker/config-openmaptiles.json \
+        ${passthru.tilemaker-config} \
+        > $out
+    '';
+
+    dontUnpack = true;
+    passthru.data =
+      if renumber
+      then runCommand "${src.name or ""}.renumbered.osm.pbf" {
+        buildInputs = [osmium-tool];
+      } "osmium renumber -i. -o $out ${src}"
+      else src;
 
     buildPhase = ''
-      jq -c '. * input' ${tilemaker}/share/tilemaker/config-openmaptiles.json ${tilemaker-config} > config.json
-      ${
-        if renumber
-        then "osmium renumber -i. -o data.osm.pbf ${src}"
-        else "ln -s ${src} data.osm.pbf"
-      }
-      tilemaker --input data.osm.pbf ${args} --output tiles.mbtiles --config=config.json
-      mb-util tiles.mbtiles tiles --image_format=pbf --scheme=xyz
-      ${
-        if isCompressed
-        then ''
-          for file in $(find tiles -type f -name '*.pbf'); do
-            mv "$file" "$file.gz"
-          done
-        ''
-        else ""
-      }
+      ln -s ${tilemaker-shp-files}/landcover .
+      ln -s ${tilemaker-shp-files}/coastline .
+      ls -la
+
+      tilemaker \
+        --input ${passthru.data} \
+        --output $out \
+        --config=${passthru.config} \
+        --process=${tilemaker}/share/tilemaker/process-openmaptiles.lua \
+        ${if renumber
+          then "--compact"
+          else ""
+        }
     '';
 
-    installPhase = ''
-      mkdir -p $out
-      mv tiles $out/
-    '';
+    dontInstall = true;
+    dontFixup = true;
   }
