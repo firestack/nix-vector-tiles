@@ -5,7 +5,7 @@
     utils.url = "github:numtide/flake-utils";
     map-sprite-packer = {
       url = "github:jmpunkt/map-sprite-packer";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "/nixpkgs";
       inputs.utils.follows = "utils";
     };
   };
@@ -16,30 +16,7 @@
     map-sprite-packer,
   }: let
     buildRustPkgs = pkgs:
-      pkgs.rustPlatform.buildRustPackage {
-        pname = "build_pbf_glyphs";
-        version = "1.4.1";
-
-        patches = [./pbf_font_tools-Protoc.patch];
-
-        src = pkgs.fetchFromGitHub {
-          owner = "stadiamaps";
-          repo = "sdf_font_tools";
-          rev = "cli-v1.4.1";
-          sha256 = "sha256-8xH9TpaC1KaaBFY5fsq3XZrNM44ZNxzs5W+Zg3aGkJU=";
-        };
-        cargoBuildFlags = "-p build_pbf_glyphs";
-
-        cargoSha256 = "sha256-m+ysA7fJqytFbSdPPNl6TQj6QAft13bO89LboTwb0uU=";
-
-        nativeBuildInputs = with pkgs; [
-          protobuf
-        ];
-
-        buildInputs = with pkgs; [
-          freetype
-        ];
-      };
+      pkgs.callPackage ./packages/build-pbf-glyphs {};
     buildForSystem = system: let
       overlays = [self.overlays.default];
       pkgs = import nixpkgs {inherit system overlays;};
@@ -56,6 +33,14 @@
         date = "230101";
         sha256 = "sha256-sOoPtIEY4TxSm/p0MGc9LGzQtQmIafGH0IWbkby95K8=";
       };
+
+		massachusetts = {
+			name = "massachusetts";
+			continent = "north-america";
+			country = "us";
+			date = "240729";
+			sha256 = "sha256-CwxG44skIq1+q1GTF9P520xYalIojU/bywvT85Ye644=";
+		};
       metadataFnFn = config: tilesUrl:
         pkgs.buildTilesMetadata {
           tileJson = {tiles = [tilesUrl];};
@@ -63,7 +48,7 @@
             inherit config;
             inherit (hessen) name;
             renumber = true;
-            src = pkgs.fetchGeofabrik hessen;
+            src = pkgs.fetchGeofabrik massachusetts;
           };
         };
       tiles-demo = style:
@@ -71,6 +56,7 @@
           bundle = pkgs.buildTilesBundle {
             metadataFn = metadataFnFn {};
             host = "http://127.0.0.1:8081";
+				# host = "http://macbook-air.guest.tri:8081";
             styleFn = style;
           };
         };

@@ -17,5 +17,5 @@
   };
 in
   writeShellScriptBin "demo" ''
-    ${miniserve}/bin/miniserve -p 8081 ${serve}/share/www
+    ${miniserve}/bin/miniserve -p 8081 --header "Access-Control-Allow-Origin: *" ${serve}/share/www
   ''
