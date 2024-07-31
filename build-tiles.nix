@@ -1,11 +1,11 @@
 {
-  stdenv,
-  writeText,
-  jq,
-  mbutil,
-  tilemaker,
-  unzip,
-  osmium-tool,
+, stdenv
+, writeText
+, jq
+, mbutil
+, tilemaker
+, unzip
+, osmium-tool
 }: {
   name,
   src,
