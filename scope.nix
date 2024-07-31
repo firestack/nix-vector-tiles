@@ -63,6 +63,11 @@ makeScope newScope (self: {
 		src = self.osm.massachusetts;
 		name = self.osm.massachusetts.name;
 	};
+
+	tilesDir = self.callPackage ./make-xyz-tiles.nix {
+		src = self.tiles;
+	};
+
 	bundles.dark-matter-gl-style = self.buildTilesBundle {
 		host = "http://127.0.0.1:8081";
 		styleFn = self.tilesStyles.dark-matter-gl-style;
