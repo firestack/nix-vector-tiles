@@ -56,6 +56,13 @@ makeScope newScope (self: {
 		sha256 = "sha256-CwxG44skIq1+q1GTF9P520xYalIojU/bywvT85Ye644=";
 	};
 
+	tiles = self.buildTiles {
+		# inherit config;
+		# inherit (hessen) name;
+		# renumber = true;
+		src = self.osm.massachusetts;
+		name = self.osm.massachusetts.name;
+	};
 	bundles.dark-matter-gl-style = self.buildTilesBundle {
 		host = "http://127.0.0.1:8081";
 		styleFn = self.tilesStyles.dark-matter-gl-style;

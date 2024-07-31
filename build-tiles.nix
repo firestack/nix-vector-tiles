@@ -27,7 +27,7 @@
 in
   stdenv.mkDerivation {
     inherit src;
-    name = "${src}-tiles";
+    name = "${src.name}.mbtiles";
 
     unpackPhase = "true";
 
@@ -40,21 +40,8 @@ in
         then "osmium renumber -i. -o data.osm.pbf ${src}"
         else "ln -s ${src} data.osm.pbf"
       }
-      tilemaker --input data.osm.pbf ${args} --output tiles.mbtiles --config=config.json
-      mb-util tiles.mbtiles tiles --image_format=pbf --scheme=xyz
-      ${
-        if isCompressed
-        then ''
-          for file in $(find tiles -type f -name '*.pbf'); do
-            mv "$file" "$file.gz"
-          done
-        ''
-        else ""
-      }
+      tilemaker --input data.osm.pbf ${args} --output $out --config=config.json
     '';
 
-    installPhase = ''
-      mkdir -p $out
-      mv tiles $out/
-    '';
+    dontInstall = true;
   }
