@@ -7,7 +7,7 @@
   "sources":{
     "openmaptiles":{
       "type":"vector",
-      "url":"mbtiles://{v3}"
+      "url":"mbtiles://mass.mbtiles"
     }
   },
   "glyphs":"{fontstack}/{range}.pbf",

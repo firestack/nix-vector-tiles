@@ -35,17 +35,22 @@
     "dark": {
       "style": "dark.json",
       "tilejson": {
-        "format": "png"
+        "format": "png",
+        "bounds": [-73.01,41.15,-69.46,43.33]
       }
     },
      "basic": {
       "style": "basic.json",
       "tilejson": {
-        "format": "png"
+        "format": "png",
+        "bounds": [-73.01,41.15,-69.46,43.33]
       }
     },
-    "other?": {
-      "style": "style.json"
+    "other": {
+      "style": "style.json",
+      "tilejson": {
+        "bounds": [-73.01,41.15,-69.46,43.33]
+      }
     }
  },
   "data": {
