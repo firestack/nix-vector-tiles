@@ -3,7 +3,6 @@
 }:
 makeScope newScope (self: {
 
-
 	build_pbf_glyphs = self.callPackage ./packages/build-pbf-glyphs {};
 
 	buildTilesFonts = self.callPackage ./build-fonts.nix {};
@@ -56,4 +55,19 @@ makeScope newScope (self: {
 		date = "240729";
 		sha256 = "sha256-CwxG44skIq1+q1GTF9P520xYalIojU/bywvT85Ye644=";
 	};
- })
+
+	bundles.dark-matter-gl-style = self.buildTilesBundle {
+		host = "http://127.0.0.1:8081";
+		styleFn = self.tilesStyles.dark-matter-gl-style;
+		metadataFn = tilesUrl: self.buildTilesMetadata {
+			tileJson = {tiles = [tilesUrl];};
+			tiles = self.buildTiles {
+				# inherit config;
+				# inherit (hessen) name;
+				renumber = true;
+				src = self.osm.massachusetts;
+				name = self.osm.massachusetts.name;
+			};
+		};
+ };
+})
