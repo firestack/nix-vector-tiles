@@ -68,6 +68,9 @@ makeScope newScope (self: {
 		src = self.tiles;
 	};
 
+	dark = self.tilesStyles.dark-matter-gl-style "" "" "";
+	basic = self.tilesStyles.maptiler-basic-gl-style "" "" "";
+
 	bundles.dark-matter-gl-style = self.buildTilesBundle {
 		host = "http://127.0.0.1:8081";
 		styleFn = self.tilesStyles.dark-matter-gl-style;
