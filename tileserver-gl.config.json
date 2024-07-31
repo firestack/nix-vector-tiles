@@ -2,9 +2,6 @@
   "options": {
     "paths": {
       "root": "",
-      "fonts": "fonts",
-      "sprites": "sprites",
-      "icons": "icons",
       "styles": "styles",
       "mbtiles": "data",
       "pmtiles": "data"
@@ -21,32 +18,39 @@
     "maxSize": 2048,
     "pbfAlias": "pbf",
     "serveAllFonts": false,
-    "serveAllStyles": false,
+    "serveAllStyles": true,
     "serveStaticMaps": true,
     "allowRemoteMarkerIcons": true,
     "allowInlineMarkerImages": true,
     "staticAttributionText": "© OpenMapTiles  © OpenStreetMaps",
     "tileMargin": 0
   },
-  "styles": {
-    "basic": {
-      "style": "basic.json",
-      "tilejson": {
-        "type": "overlay",
-        "bounds": [8.44806, 47.32023, 8.62537, 47.43468]
-      }
-    },
-    "hybrid": {
-      "style": "satellite-hybrid.json",
-      "serve_rendered": false,
-      "tilejson": {
-        "format": "webp"
-      }
+  "sources": {
+    "openmaptiles": {
+      "url": "mbtiles://mass.mbtiles",
+      "type": "vector"
     }
   },
+  "styles": {
+    "dark": {
+      "style": "dark.json",
+      "tilejson": {
+        "format": "png"
+      }
+    },
+     "basic": {
+      "style": "basic.json",
+      "tilejson": {
+        "format": "png"
+      }
+    },
+    "other?": {
+      "style": "style.json"
+    }
+ },
   "data": {
-    "zurich-vector": {
-      "mbtiles": "zurich.mbtiles"
+    "openmaptiles": {
+      "mbtiles": "mass.mbtiles"
     }
   }
 }
