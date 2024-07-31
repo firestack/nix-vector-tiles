@@ -43,12 +43,20 @@ in
         > $out
     '';
 
+    # passthru.data =
+    #   if renumber
+    #   then runCommand "data.osm.pbf" {} ''
+    #     osmium renumber -i. -o $out ${src}
+    #   ''
+    #   else src;
+
     buildPhase = ''
       ${
         if renumber
         then "osmium renumber -i. -o data.osm.pbf ${src}"
         else "ln -s ${src} data.osm.pbf"
       }
+
       tilemaker --input data.osm.pbf ${args} --output $out --config=${passthru.config}
     '';
 
