@@ -2,27 +2,12 @@
   buildTilesFonts,
   buildTilesStyle,
   fetchFromGitHub,
-  noto-fonts,
-  roboto,
+  noto-tiles,
+  roboto-tiles,
   moreutils,
 }: let
-  noto-tiles = buildTilesFonts {
-    name = "noto";
-    fonts = [noto-fonts];
-  };
-  roboto-tiles =
-    (buildTilesFonts {
-      name = "roboto";
-      fonts = [roboto];
-    })
-    .overrideAttrs (old: {
-      installPhase =
-        (old.installPhase or "")
-        + ''
-          mv $out/share/map-fonts/Roboto "$out/share/map-fonts/Roboto Regular"
-        '';
-    });
-  removeMetropolisFont = drv:
+
+ removeMetropolisFont = drv:
     drv.overrideAttrs (old: {
       buildInputs = (old.buildInputs or []) ++ [moreutils];
       buildPhase =

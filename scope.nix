@@ -15,6 +15,24 @@ makeScope newScope (self: {
 
 	tilesStyles = self.callPackage ./styles.nix {};
 
+	noto-tiles = self.callPackage ({ buildTilesFonts, noto-fonts }: buildTilesFonts {
+		name = "noto";
+		fonts = [noto-fonts];
+	}) {};
+
+	roboto-tiles = self.callPackage ({ buildTilesFonts, roboto }:
+		(buildTilesFonts {
+			name = "roboto";
+			fonts = [roboto];
+		})
+		.overrideAttrs (old: {
+			installPhase =
+				(old.installPhase or "")
+				+ ''
+				 mv $out/share/map-fonts/Roboto "$out/share/map-fonts/Roboto Regular"
+				'';
+		})) {};
+
 	fetchGeofabrik = self.callPackage ./fetch-geofabrik.nix {};
 	osm.germany = self.fetchGeofabrik {
 		name = "germany";
