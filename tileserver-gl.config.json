@@ -48,6 +48,7 @@
     },
     "other": {
       "style": "style.json",
+      "serve_rendered": true,
       "tilejson": {
         "bounds": [-73.01,41.15,-69.46,43.33]
       }

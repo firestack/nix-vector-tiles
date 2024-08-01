@@ -7,6 +7,7 @@
 , tilemaker
 , unzip
 , osmium-tool
+, tilemaker-shp-files
 }: {
   name,
   src,
@@ -51,6 +52,9 @@ in
     #   else src;
 
     buildPhase = ''
+      ln -s ${tilemaker-shp-files}/landcover .
+      ln -s ${tilemaker-shp-files}/coastline .
+      ls -la
       ${
         if renumber
         then "osmium renumber -i. -o data.osm.pbf ${src}"
@@ -61,4 +65,5 @@ in
     '';
 
     dontInstall = true;
+    dontFixup = true;
   }
