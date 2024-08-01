@@ -1,11 +1,12 @@
-{
-  stdenv,
-  writeText,
-  jq,
-  mbutil,
-  tilemaker,
-  unzip,
-  osmium-tool,
+{ lib
+, runCommand
+, stdenv
+, writeText
+, jq
+, mbutil
+, tilemaker
+, unzip
+, osmium-tool
 }: {
   name,
   src,
@@ -25,7 +26,7 @@
     && config.settings.compress != "none";
   # then ''find tiles -name '*.pbf' -exec sh -c 'echo "$1" "$1.gz"' - '{}' +''
 in
-  stdenv.mkDerivation {
+  stdenv.mkDerivation rec {
     inherit src;
     name = "${src.name}.mbtiles";
 
@@ -33,14 +34,22 @@ in
 
     buildInputs = [jq mbutil tilemaker unzip osmium-tool];
 
+    passthru.config = runCommand "tilemaker-config.json" {
+      buildInputs = [ jq ];
+    } ''
+      jq -c '. * input' \
+        ${tilemaker}/share/tilemaker/config-openmaptiles.json \
+        ${tilemaker-config} \
+        > $out
+    '';
+
     buildPhase = ''
-      jq -c '. * input' ${tilemaker}/share/tilemaker/config-openmaptiles.json ${tilemaker-config} > config.json
       ${
         if renumber
         then "osmium renumber -i. -o data.osm.pbf ${src}"
         else "ln -s ${src} data.osm.pbf"
       }
-      tilemaker --input data.osm.pbf ${args} --output $out --config=config.json
+      tilemaker --input data.osm.pbf ${args} --output $out --config=${passthru.config}
     '';
 
     dontInstall = true;
