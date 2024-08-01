@@ -1,10 +1,10 @@
-{ lib,
-  stdenv,
-  symlinkJoin,
-  build_pbf_glyphs,
-  jq,
-  writeText,
-  fontconfig,
+{ lib
+, stdenv
+, symlinkJoin
+, build_pbf_glyphs
+, jq
+, writeText
+, fontconfig
 }: {
   name,
   fonts,
