@@ -28,7 +28,7 @@
 in
   stdenv.mkDerivation rec {
     inherit src;
-    name = "${src.name}.mbtiles";
+    name = "${src.name or ""}.mbtiles";
 
     unpackPhase = "true";
 
