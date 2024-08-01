@@ -4,8 +4,8 @@
   jq,
   symlinkJoin,
   moreutils,
-  map-sprite-packer ? null,
   optipng,
+  map-sprite-packer ? null,
 }: {
   name,
   src,
