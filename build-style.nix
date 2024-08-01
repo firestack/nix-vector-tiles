@@ -1,19 +1,19 @@
-{
-  lib,
-  stdenv,
-  jq,
-  symlinkJoin,
-  moreutils,
-  optipng,
-  map-sprite-packer ? null,
-}: {
-  name,
-  src,
-  overrideJson,
-  fonts,
-  spriteDirectories ? null,
-  spriteWidth ? 600,
-  spriteHeight ? 800,
+{ lib
+, stdenv
+, jq
+, symlinkJoin
+, moreutils
+, optipng
+, map-sprite-packer ? null
+}:
+
+{ name
+, src
+, overrideJson
+, fonts
+, spriteDirectories ? null
+, spriteWidth ? 600
+, spriteHeight ? 800
 }: let
   fontPath = symlinkJoin {
     name = "combined-style-fonts";
