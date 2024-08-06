@@ -41,7 +41,12 @@ in
       ${
         if shouldPack
         then ''
-          map-sprite-packer ${dirArgs} --width ${toString spriteWidth} --height ${toString spriteHeight} --output sprites
+          map-sprite-packer \
+            ${dirArgs} \
+            --width ${toString spriteWidth} \
+            --height ${toString spriteHeight} \
+            --output sprites
+
           optipng -o9 sprites/sprite.png
           optipng -o9 sprites/sprite@2x.png
         ''

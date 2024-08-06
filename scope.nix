@@ -1,10 +1,13 @@
-{ makeScope
+{ lib
+, makeScope
 , newScope
 }:
 makeScope newScope (self: {
 	build_pbf_glyphs = self.callPackage ./packages/build-pbf-glyphs {};
 
 	mapbox-gl-styles = self.callPackage ./styles.nix {};
+
+	# mapbox-gl-styles-package = lib.mapAttrs (name: style-src: ) self.mapbox-gl-styles;
 
 	buildTilesFonts = self.callPackage ./build-fonts.nix {};
 	buildTilesStyle = self.callPackage ./build-style.nix {};

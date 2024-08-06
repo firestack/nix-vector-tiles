@@ -13,6 +13,7 @@
     repo =  "osm-bright-gl-style";
     rev = "tags/v1.9";
     sha256 = "sha256-X1ueE6cVTEA1D9ctjHMqWJQhdM37RZxciCBQUaQyG64=";
+    passthru.hi = "1";
   };
 
   positron-gl-style =  fetchFromGitHub {
