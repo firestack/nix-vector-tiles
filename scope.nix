@@ -4,10 +4,10 @@
 makeScope newScope (self: {
 	build_pbf_glyphs = self.callPackage ./packages/build-pbf-glyphs {};
 
+	mapbox-gl-styles = self.callPackage ./styles.nix {};
+
 	buildTilesFonts = self.callPackage ./build-fonts.nix {};
 	buildTilesStyle = self.callPackage ./build-style.nix {};
-
-	tilesStyles = self.callPackage ./styles.nix {};
 
 	buildTiles = self.callPackage ./build-tiles.nix {};
 	buildTilesBundle = self.callPackage ./build-bundle.nix {};
