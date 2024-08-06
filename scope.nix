@@ -7,11 +7,12 @@ makeScope newScope (self: {
 	buildTilesFonts = self.callPackage ./build-fonts.nix {};
 	buildTilesStyle = self.callPackage ./build-style.nix {};
 
+	tilesStyles = self.callPackage ./styles.nix {};
+
 	buildTiles = self.callPackage ./build-tiles.nix {};
 	buildTilesBundle = self.callPackage ./build-bundle.nix {};
 	buildTilesMetadata = self.callPackage ./build-metadata.nix {};
 
-	tilesStyles = self.callPackage ./styles.nix {};
 
 	noto-tiles = self.callPackage ({ buildTilesFonts, noto-fonts }: buildTilesFonts {
 		name = "noto";
