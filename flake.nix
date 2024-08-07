@@ -100,6 +100,10 @@
       packages = {
         inherit (pkgs) build_pbf_glyphs;
       };
+      legacyPackages = {
+        # styles = lib.mapAttrs () pkgs.tilesStyles
+        inherit (pkgs) tilesStyles;
+      };
       apps = builtins.foldl' (left: right: left // right) {} (map (
           key: {
             "demo-${key}" = {
