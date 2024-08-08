@@ -16,16 +16,20 @@ makeScope newScope (self: {
 	buildTilesBundle = self.callPackage ./build-bundle.nix {};
 	buildTilesMetadata = self.callPackage ./build-metadata.nix {};
 
+	noto-glyphs = self.callPackage ({ noto-fonts, build_pbf_glyphs, runCommand }:
+		runCommand "noto-glyphs" {} (lib.concatLines [
+			"${lib.getExe build_pbf_glyphs} ${noto-fonts}/share/fonts/noto $out/share/fonts/noto"
+		])) {};
 
 	noto-tiles = self.callPackage ({ buildTilesFonts, noto-fonts }: buildTilesFonts {
 		name = "noto";
 		fonts = [noto-fonts];
 	}) {};
 
-	roboto-tiles = self.callPackage ({ buildTilesFonts, roboto }:
+	roboto-tiles = self.callPackage ({ buildTilesFonts, roboto, noto-fonts }:
 		(buildTilesFonts {
 			name = "roboto";
-			fonts = [roboto];
+			fonts = [roboto noto-fonts];
 		})
 		.overrideAttrs (old: {
 			installPhase =
