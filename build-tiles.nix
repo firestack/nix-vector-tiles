@@ -16,7 +16,7 @@
 }: let
   tilemaker-config =
     writeText "app-config.json" (builtins.toJSON
-      ({settings = {compress = "none";};} // config));
+      ({settings.compress = "none";} // config));
   args =
     if renumber
     then "--compact"
@@ -61,7 +61,11 @@ in
         else "ln -s ${src} data.osm.pbf"
       }
 
-      tilemaker --input data.osm.pbf ${args} --output $out --config=${passthru.config}
+      tilemaker \
+        --input data.osm.pbf ${args} \
+        --output $out \
+        --config=${passthru.config} \
+        --process=${tilemaker}/share/tilemaker/process-openmaptiles.lua
     '';
 
     dontInstall = true;
