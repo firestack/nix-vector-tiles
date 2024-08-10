@@ -5,6 +5,7 @@
 makeScope newScope (self: {
 	build-pbf-glyphs = self.callPackage ./packages/build-pbf-glyphs {};
 
+	map-sprite-packer = self.callPackage ./packages/map-sprite-packer {};
 	mapbox-gl-styles = self.callPackage ./styles.nix {};
 
 	# mapbox-gl-styles-package = lib.mapAttrs (name: style-src: ) self.mapbox-gl-styles;
