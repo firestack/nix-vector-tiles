@@ -99,24 +99,7 @@
       #     "osm-liberty"
       #   ]);
     };
-  in
-    (utils.lib.eachDefaultSystem buildForSystem)
-    // {
-      overlays = {
-        default = nixpkgs.lib.composeManyExtensions [
-          map-sprite-packer.overlays.default
-          # self.overlays.packages
-        ];
-        # packages = final: prev: {
-        #   build_pbf_glyphs = buildRustPkgs prev;
-        #   fetchGeofabrik = prev.callPackage ./fetch-geofabrik.nix {};
-        #   buildTiles = prev.callPackage ./build-tiles.nix {};
-        #   buildTilesBundle = prev.callPackage ./build-bundle.nix {};
-        #   buildTilesFonts = prev.callPackage ./build-fonts.nix {};
-        #   buildTilesStyle = prev.callPackage ./build-style.nix {};
-        #   buildTilesMetadata = prev.callPackage ./build-metadata.nix {};
-        #   tilesStyles = final.callPackage ./styles.nix {};
-        # };
       };
-    };
+    in
+    (utils.lib.eachDefaultSystem buildForSystem);
 }
