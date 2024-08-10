@@ -1,0 +1,894 @@
+{ "file": "./result-noto/share/fonts/noto/NotoFangsongKSSRotated-Regular.otf","fullname": "Noto Fangsong KSS Rotated Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoFangsongKSSVertical-Regular.otf","fullname": "Noto Fangsong KSS Vertical Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoKufiArabic-Black.otf","fullname": "Noto Kufi Arabic Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoKufiArabic-Bold.otf","fullname": "Noto Kufi Arabic Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoKufiArabic-ExtraBold.otf","fullname": "Noto Kufi Arabic ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoKufiArabic-ExtraLight.otf","fullname": "Noto Kufi Arabic ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoKufiArabic-Light.otf","fullname": "Noto Kufi Arabic Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoKufiArabic-Medium.otf","fullname": "Noto Kufi Arabic Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoKufiArabic-Regular.otf","fullname": "Noto Kufi Arabic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoKufiArabic-SemiBold.otf","fullname": "Noto Kufi Arabic SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoKufiArabic-Thin.otf","fullname": "Noto Kufi Arabic Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoMusic-Regular.otf","fullname": "Noto Music Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoNaskhArabicUI[wght].ttf","fullname": "Noto Naskh Arabic UI Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoNaskhArabicUI[wght].ttf","fullname": "Noto Naskh Arabic UI Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoNaskhArabicUI[wght].ttf","fullname": "Noto Naskh Arabic UI SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoNaskhArabicUI[wght].ttf","fullname": "Noto Naskh Arabic UI Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoNaskhArabicUI[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoNaskhArabic[wght].ttf","fullname": "Noto Naskh Arabic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoNaskhArabic[wght].ttf","fullname": "Noto Naskh Arabic Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoNaskhArabic[wght].ttf","fullname": "Noto Naskh Arabic SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoNaskhArabic[wght].ttf","fullname": "Noto Naskh Arabic Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoNaskhArabic[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoNastaliqUrdu[wght].ttf","fullname": "Noto Nastaliq Urdu Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoNastaliqUrdu[wght].ttf","fullname": "Noto Nastaliq Urdu Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoNastaliqUrdu[wght].ttf","fullname": "Noto Nastaliq Urdu SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoNastaliqUrdu[wght].ttf","fullname": "Noto Nastaliq Urdu Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoNastaliqUrdu[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoRashiHebrew[wght].ttf","fullname": "Noto Rashi Hebrew Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoRashiHebrew[wght].ttf","fullname": "Noto Rashi Hebrew Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoRashiHebrew[wght].ttf","fullname": "Noto Rashi Hebrew ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoRashiHebrew[wght].ttf","fullname": "Noto Rashi Hebrew Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoRashiHebrew[wght].ttf","fullname": "Noto Rashi Hebrew Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoRashiHebrew[wght].ttf","fullname": "Noto Rashi Hebrew SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoRashiHebrew[wght].ttf","fullname": "Noto Rashi Hebrew Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoRashiHebrew[wght].ttf","fullname": "Noto Rashi Hebrew ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoRashiHebrew[wght].ttf","fullname": "Noto Rashi Hebrew Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoRashiHebrew[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans-Italic[wdth,wght].ttf","fullname": "Noto Sans Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans-Italic[wdth,wght].ttf","fullname": "Noto Sans Thin Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans-Italic[wdth,wght].ttf","fullname": "Noto Sans ExtraLight Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans-Italic[wdth,wght].ttf","fullname": "Noto Sans Light Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans-Italic[wdth,wght].ttf","fullname": "Noto Sans Medium Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans-Italic[wdth,wght].ttf","fullname": "Noto Sans SemiBold Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans-Italic[wdth,wght].ttf","fullname": "Noto Sans Bold Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans-Italic[wdth,wght].ttf","fullname": "Noto Sans ExtraBold Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans-Italic[wdth,wght].ttf","fullname": "Noto Sans Black Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans-Italic[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansAdlamUnjoined[wght].ttf","fullname": "Noto Sans Adlam Unjoined Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansAdlamUnjoined[wght].ttf","fullname": "Noto Sans Adlam Unjoined Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansAdlamUnjoined[wght].ttf","fullname": "Noto Sans Adlam Unjoined SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansAdlamUnjoined[wght].ttf","fullname": "Noto Sans Adlam Unjoined Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansAdlamUnjoined[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansAdlam[wght].ttf","fullname": "Noto Sans Adlam Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansAdlam[wght].ttf","fullname": "Noto Sans Adlam Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansAdlam[wght].ttf","fullname": "Noto Sans Adlam SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansAdlam[wght].ttf","fullname": "Noto Sans Adlam Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansAdlam[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansAnatolianHieroglyphs-Regular.otf","fullname": "Noto Sans Anatolian Hieroglyphs Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArabic[wdth,wght].ttf","fullname": "Noto Sans Arabic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArabic[wdth,wght].ttf","fullname": "Noto Sans Arabic Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArabic[wdth,wght].ttf","fullname": "Noto Sans Arabic ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArabic[wdth,wght].ttf","fullname": "Noto Sans Arabic Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArabic[wdth,wght].ttf","fullname": "Noto Sans Arabic Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArabic[wdth,wght].ttf","fullname": "Noto Sans Arabic SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArabic[wdth,wght].ttf","fullname": "Noto Sans Arabic Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArabic[wdth,wght].ttf","fullname": "Noto Sans Arabic ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArabic[wdth,wght].ttf","fullname": "Noto Sans Arabic Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArabic[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArmenian[wdth,wght].ttf","fullname": "Noto Sans Armenian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArmenian[wdth,wght].ttf","fullname": "Noto Sans Armenian Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArmenian[wdth,wght].ttf","fullname": "Noto Sans Armenian ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArmenian[wdth,wght].ttf","fullname": "Noto Sans Armenian Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArmenian[wdth,wght].ttf","fullname": "Noto Sans Armenian Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArmenian[wdth,wght].ttf","fullname": "Noto Sans Armenian SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArmenian[wdth,wght].ttf","fullname": "Noto Sans Armenian Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArmenian[wdth,wght].ttf","fullname": "Noto Sans Armenian ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArmenian[wdth,wght].ttf","fullname": "Noto Sans Armenian Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansArmenian[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansAvestan-Regular.otf","fullname": "Noto Sans Avestan Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBalinese[wght].ttf","fullname": "Noto Sans Balinese Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBalinese[wght].ttf","fullname": "Noto Sans Balinese Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBalinese[wght].ttf","fullname": "Noto Sans Balinese SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBalinese[wght].ttf","fullname": "Noto Sans Balinese Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBalinese[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBamum[wght].ttf","fullname": "Noto Sans Bamum Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBamum[wght].ttf","fullname": "Noto Sans Bamum Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBamum[wght].ttf","fullname": "Noto Sans Bamum SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBamum[wght].ttf","fullname": "Noto Sans Bamum Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBamum[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBassaVah[wght].ttf","fullname": "Noto Sans Bassa Vah Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBassaVah[wght].ttf","fullname": "Noto Sans Bassa Vah Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBassaVah[wght].ttf","fullname": "Noto Sans Bassa Vah SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBassaVah[wght].ttf","fullname": "Noto Sans Bassa Vah Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBassaVah[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBatak-Regular.otf","fullname": "Noto Sans Batak Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBengali[wdth,wght].ttf","fullname": "Noto Sans Bengali Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBengali[wdth,wght].ttf","fullname": "Noto Sans Bengali Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBengali[wdth,wght].ttf","fullname": "Noto Sans Bengali ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBengali[wdth,wght].ttf","fullname": "Noto Sans Bengali Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBengali[wdth,wght].ttf","fullname": "Noto Sans Bengali Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBengali[wdth,wght].ttf","fullname": "Noto Sans Bengali SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBengali[wdth,wght].ttf","fullname": "Noto Sans Bengali Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBengali[wdth,wght].ttf","fullname": "Noto Sans Bengali ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBengali[wdth,wght].ttf","fullname": "Noto Sans Bengali Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBengali[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBhaiksuki-Regular.otf","fullname": "Noto Sans Bhaiksuki Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBrahmi-Regular.otf","fullname": "Noto Sans Brahmi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBuginese-Regular.otf","fullname": "Noto Sans Buginese Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansBuhid-Regular.otf","fullname": "Noto Sans Buhid Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCanadianAboriginal[wght].ttf","fullname": "Noto Sans Canadian Aboriginal Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCanadianAboriginal[wght].ttf","fullname": "Noto Sans Canadian Aboriginal Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCanadianAboriginal[wght].ttf","fullname": "Noto Sans Canadian Aboriginal ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCanadianAboriginal[wght].ttf","fullname": "Noto Sans Canadian Aboriginal Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCanadianAboriginal[wght].ttf","fullname": "Noto Sans Canadian Aboriginal Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCanadianAboriginal[wght].ttf","fullname": "Noto Sans Canadian Aboriginal SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCanadianAboriginal[wght].ttf","fullname": "Noto Sans Canadian Aboriginal Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCanadianAboriginal[wght].ttf","fullname": "Noto Sans Canadian Aboriginal ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCanadianAboriginal[wght].ttf","fullname": "Noto Sans Canadian Aboriginal Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCanadianAboriginal[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCarian-Regular.otf","fullname": "Noto Sans Carian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCaucasianAlbanian-Regular.otf","fullname": "Noto Sans Caucasian Albanian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansChakma-Regular.otf","fullname": "Noto Sans Chakma Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCham[wght].ttf","fullname": "Noto Sans Cham Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCham[wght].ttf","fullname": "Noto Sans Cham Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCham[wght].ttf","fullname": "Noto Sans Cham ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCham[wght].ttf","fullname": "Noto Sans Cham Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCham[wght].ttf","fullname": "Noto Sans Cham Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCham[wght].ttf","fullname": "Noto Sans Cham SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCham[wght].ttf","fullname": "Noto Sans Cham Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCham[wght].ttf","fullname": "Noto Sans Cham ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCham[wght].ttf","fullname": "Noto Sans Cham Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCham[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCherokee[wght].ttf","fullname": "Noto Sans Cherokee Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCherokee[wght].ttf","fullname": "Noto Sans Cherokee Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCherokee[wght].ttf","fullname": "Noto Sans Cherokee ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCherokee[wght].ttf","fullname": "Noto Sans Cherokee Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCherokee[wght].ttf","fullname": "Noto Sans Cherokee Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCherokee[wght].ttf","fullname": "Noto Sans Cherokee SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCherokee[wght].ttf","fullname": "Noto Sans Cherokee Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCherokee[wght].ttf","fullname": "Noto Sans Cherokee ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCherokee[wght].ttf","fullname": "Noto Sans Cherokee Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCherokee[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansChorasmian-Regular.otf","fullname": "Noto Sans Chorasmian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCoptic-Regular.otf","fullname": "Noto Sans Coptic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCuneiform-Regular.otf","fullname": "Noto Sans Cuneiform Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCypriot-Regular.otf","fullname": "Noto Sans Cypriot Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansCyproMinoan-Regular.otf","fullname": "Noto Sans Cypro Minoan Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansDeseret-Regular.otf","fullname": "Noto Sans Deseret Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansDevanagari[wdth,wght].ttf","fullname": "Noto Sans Devanagari Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansDevanagari[wdth,wght].ttf","fullname": "Noto Sans Devanagari Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansDevanagari[wdth,wght].ttf","fullname": "Noto Sans Devanagari ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansDevanagari[wdth,wght].ttf","fullname": "Noto Sans Devanagari Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansDevanagari[wdth,wght].ttf","fullname": "Noto Sans Devanagari Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansDevanagari[wdth,wght].ttf","fullname": "Noto Sans Devanagari SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansDevanagari[wdth,wght].ttf","fullname": "Noto Sans Devanagari Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansDevanagari[wdth,wght].ttf","fullname": "Noto Sans Devanagari ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansDevanagari[wdth,wght].ttf","fullname": "Noto Sans Devanagari Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansDevanagari[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansDuployan-Bold.otf","fullname": "Noto Sans Duployan Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansDuployan-Regular.otf","fullname": "Noto Sans Duployan Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansEgyptianHieroglyphs-Regular.otf","fullname": "Noto Sans Egyptian Hieroglyphs Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansElbasan-Regular.otf","fullname": "Noto Sans Elbasan Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansElymaic-Regular.otf","fullname": "Noto Sans Elymaic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansEthiopic[wdth,wght].ttf","fullname": "Noto Sans Ethiopic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansEthiopic[wdth,wght].ttf","fullname": "Noto Sans Ethiopic Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansEthiopic[wdth,wght].ttf","fullname": "Noto Sans Ethiopic ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansEthiopic[wdth,wght].ttf","fullname": "Noto Sans Ethiopic Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansEthiopic[wdth,wght].ttf","fullname": "Noto Sans Ethiopic Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansEthiopic[wdth,wght].ttf","fullname": "Noto Sans Ethiopic SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansEthiopic[wdth,wght].ttf","fullname": "Noto Sans Ethiopic Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansEthiopic[wdth,wght].ttf","fullname": "Noto Sans Ethiopic ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansEthiopic[wdth,wght].ttf","fullname": "Noto Sans Ethiopic Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansEthiopic[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGeorgian[wdth,wght].ttf","fullname": "Noto Sans Georgian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGeorgian[wdth,wght].ttf","fullname": "Noto Sans Georgian Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGeorgian[wdth,wght].ttf","fullname": "Noto Sans Georgian ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGeorgian[wdth,wght].ttf","fullname": "Noto Sans Georgian Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGeorgian[wdth,wght].ttf","fullname": "Noto Sans Georgian Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGeorgian[wdth,wght].ttf","fullname": "Noto Sans Georgian SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGeorgian[wdth,wght].ttf","fullname": "Noto Sans Georgian Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGeorgian[wdth,wght].ttf","fullname": "Noto Sans Georgian ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGeorgian[wdth,wght].ttf","fullname": "Noto Sans Georgian Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGeorgian[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGlagolitic-Regular.otf","fullname": "Noto Sans Glagolitic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGothic-Regular.otf","fullname": "Noto Sans Gothic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGrantha-Regular.otf","fullname": "Noto Sans Grantha Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGujarati[wdth,wght].ttf","fullname": "Noto Sans Gujarati Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGujarati[wdth,wght].ttf","fullname": "Noto Sans Gujarati Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGujarati[wdth,wght].ttf","fullname": "Noto Sans Gujarati ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGujarati[wdth,wght].ttf","fullname": "Noto Sans Gujarati Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGujarati[wdth,wght].ttf","fullname": "Noto Sans Gujarati Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGujarati[wdth,wght].ttf","fullname": "Noto Sans Gujarati SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGujarati[wdth,wght].ttf","fullname": "Noto Sans Gujarati Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGujarati[wdth,wght].ttf","fullname": "Noto Sans Gujarati ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGujarati[wdth,wght].ttf","fullname": "Noto Sans Gujarati Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGujarati[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGunjalaGondi[wght].ttf","fullname": "Noto Sans Gunjala Gondi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGunjalaGondi[wght].ttf","fullname": "Noto Sans Gunjala Gondi Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGunjalaGondi[wght].ttf","fullname": "Noto Sans Gunjala Gondi SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGunjalaGondi[wght].ttf","fullname": "Noto Sans Gunjala Gondi Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGunjalaGondi[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGurmukhi[wdth,wght].ttf","fullname": "Noto Sans Gurmukhi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGurmukhi[wdth,wght].ttf","fullname": "Noto Sans Gurmukhi Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGurmukhi[wdth,wght].ttf","fullname": "Noto Sans Gurmukhi ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGurmukhi[wdth,wght].ttf","fullname": "Noto Sans Gurmukhi Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGurmukhi[wdth,wght].ttf","fullname": "Noto Sans Gurmukhi Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGurmukhi[wdth,wght].ttf","fullname": "Noto Sans Gurmukhi SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGurmukhi[wdth,wght].ttf","fullname": "Noto Sans Gurmukhi Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGurmukhi[wdth,wght].ttf","fullname": "Noto Sans Gurmukhi ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGurmukhi[wdth,wght].ttf","fullname": "Noto Sans Gurmukhi Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansGurmukhi[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHanifiRohingya[wght].ttf","fullname": "Noto Sans Hanifi Rohingya,Noto Sans Hanifi Rohingya Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHanifiRohingya[wght].ttf","fullname": "Noto Sans Hanifi Rohingya" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHanifiRohingya[wght].ttf","fullname": "Noto Sans Hanifi Rohingya" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHanifiRohingya[wght].ttf","fullname": "Noto Sans Hanifi Rohingya" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHanifiRohingya[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHanunoo-Regular.otf","fullname": "Noto Sans Hanunoo Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHatran-Regular.otf","fullname": "Noto Sans Hatran Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHebrew[wdth,wght].ttf","fullname": "Noto Sans Hebrew Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHebrew[wdth,wght].ttf","fullname": "Noto Sans Hebrew Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHebrew[wdth,wght].ttf","fullname": "Noto Sans Hebrew ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHebrew[wdth,wght].ttf","fullname": "Noto Sans Hebrew Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHebrew[wdth,wght].ttf","fullname": "Noto Sans Hebrew Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHebrew[wdth,wght].ttf","fullname": "Noto Sans Hebrew SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHebrew[wdth,wght].ttf","fullname": "Noto Sans Hebrew Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHebrew[wdth,wght].ttf","fullname": "Noto Sans Hebrew ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHebrew[wdth,wght].ttf","fullname": "Noto Sans Hebrew Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansHebrew[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansImperialAramaic-Regular.otf","fullname": "Noto Sans Imperial Aramaic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansIndicSiyaqNumbers-Regular.otf","fullname": "Noto Sans Indic Siyaq Numbers Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansInscriptionalPahlavi-Regular.otf","fullname": "Noto Sans Inscriptional Pahlavi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansInscriptionalParthian-Regular.otf","fullname": "Noto Sans Inscriptional Parthian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansJavanese[wght].ttf","fullname": "Noto Sans Javanese Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansJavanese[wght].ttf","fullname": "Noto Sans Javanese Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansJavanese[wght].ttf","fullname": "Noto Sans Javanese SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansJavanese[wght].ttf","fullname": "Noto Sans Javanese Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansJavanese[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKaithi-Regular.otf","fullname": "Noto Sans Kaithi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKannada[wdth,wght].ttf","fullname": "Noto Sans Kannada Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKannada[wdth,wght].ttf","fullname": "Noto Sans Kannada Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKannada[wdth,wght].ttf","fullname": "Noto Sans Kannada ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKannada[wdth,wght].ttf","fullname": "Noto Sans Kannada Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKannada[wdth,wght].ttf","fullname": "Noto Sans Kannada Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKannada[wdth,wght].ttf","fullname": "Noto Sans Kannada SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKannada[wdth,wght].ttf","fullname": "Noto Sans Kannada Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKannada[wdth,wght].ttf","fullname": "Noto Sans Kannada ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKannada[wdth,wght].ttf","fullname": "Noto Sans Kannada Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKannada[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKawi[wght].ttf","fullname": "Noto Sans Kawi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKawi[wght].ttf","fullname": "Noto Sans Kawi Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKawi[wght].ttf","fullname": "Noto Sans Kawi SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKawi[wght].ttf","fullname": "Noto Sans Kawi Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKawi[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKayahLi[wght].ttf","fullname": "Noto Sans Kayah Li Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKayahLi[wght].ttf","fullname": "Noto Sans Kayah Li Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKayahLi[wght].ttf","fullname": "Noto Sans Kayah Li SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKayahLi[wght].ttf","fullname": "Noto Sans Kayah Li Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKayahLi[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKharoshthi-Regular.otf","fullname": "Noto Sans Kharoshthi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKhmer[wdth,wght].ttf","fullname": "Noto Sans Khmer Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKhmer[wdth,wght].ttf","fullname": "Noto Sans Khmer Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKhmer[wdth,wght].ttf","fullname": "Noto Sans Khmer ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKhmer[wdth,wght].ttf","fullname": "Noto Sans Khmer Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKhmer[wdth,wght].ttf","fullname": "Noto Sans Khmer Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKhmer[wdth,wght].ttf","fullname": "Noto Sans Khmer SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKhmer[wdth,wght].ttf","fullname": "Noto Sans Khmer Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKhmer[wdth,wght].ttf","fullname": "Noto Sans Khmer ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKhmer[wdth,wght].ttf","fullname": "Noto Sans Khmer Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKhmer[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKhojki-Regular.otf","fullname": "Noto Sans Khojki Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansKhudawadi-Regular.otf","fullname": "Noto Sans Khudawadi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLaoLooped[wdth,wght].ttf","fullname": "Noto Sans Lao Looped Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLaoLooped[wdth,wght].ttf","fullname": "Noto Sans Lao Looped Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLaoLooped[wdth,wght].ttf","fullname": "Noto Sans Lao Looped ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLaoLooped[wdth,wght].ttf","fullname": "Noto Sans Lao Looped Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLaoLooped[wdth,wght].ttf","fullname": "Noto Sans Lao Looped Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLaoLooped[wdth,wght].ttf","fullname": "Noto Sans Lao Looped SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLaoLooped[wdth,wght].ttf","fullname": "Noto Sans Lao Looped Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLaoLooped[wdth,wght].ttf","fullname": "Noto Sans Lao Looped ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLaoLooped[wdth,wght].ttf","fullname": "Noto Sans Lao Looped Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLaoLooped[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLao[wdth,wght].ttf","fullname": "Noto Sans Lao Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLao[wdth,wght].ttf","fullname": "Noto Sans Lao Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLao[wdth,wght].ttf","fullname": "Noto Sans Lao ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLao[wdth,wght].ttf","fullname": "Noto Sans Lao Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLao[wdth,wght].ttf","fullname": "Noto Sans Lao Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLao[wdth,wght].ttf","fullname": "Noto Sans Lao SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLao[wdth,wght].ttf","fullname": "Noto Sans Lao Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLao[wdth,wght].ttf","fullname": "Noto Sans Lao ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLao[wdth,wght].ttf","fullname": "Noto Sans Lao Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLao[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLepcha-Regular.otf","fullname": "Noto Sans Lepcha Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLimbu-Regular.otf","fullname": "Noto Sans Limbu Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLinearA-Regular.otf","fullname": "Noto Sans Linear A Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLinearB-Regular.otf","fullname": "Noto Sans Linear B Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLisu[wght].ttf","fullname": "Noto Sans Lisu Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLisu[wght].ttf","fullname": "Noto Sans Lisu Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLisu[wght].ttf","fullname": "Noto Sans Lisu SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLisu[wght].ttf","fullname": "Noto Sans Lisu Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLisu[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLycian-Regular.otf","fullname": "Noto Sans Lycian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansLydian-Regular.otf","fullname": "Noto Sans Lydian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMahajani-Regular.otf","fullname": "Noto Sans Mahajani Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMalayalam[wdth,wght].ttf","fullname": "Noto Sans Malayalam Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMalayalam[wdth,wght].ttf","fullname": "Noto Sans Malayalam Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMalayalam[wdth,wght].ttf","fullname": "Noto Sans Malayalam ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMalayalam[wdth,wght].ttf","fullname": "Noto Sans Malayalam Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMalayalam[wdth,wght].ttf","fullname": "Noto Sans Malayalam Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMalayalam[wdth,wght].ttf","fullname": "Noto Sans Malayalam SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMalayalam[wdth,wght].ttf","fullname": "Noto Sans Malayalam Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMalayalam[wdth,wght].ttf","fullname": "Noto Sans Malayalam ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMalayalam[wdth,wght].ttf","fullname": "Noto Sans Malayalam Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMalayalam[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMandaic-Regular.otf","fullname": "Noto Sans Mandaic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansManichaean-Regular.otf","fullname": "Noto Sans Manichaean Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMarchen-Regular.otf","fullname": "Noto Sans Marchen Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMasaramGondi-Regular.otf","fullname": "Noto Sans Masaram Gondi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMath-Regular.otf","fullname": "Noto Sans Math Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMayanNumerals-Regular.otf","fullname": "Noto Sans Mayan Numerals Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMedefaidrin[wght].ttf","fullname": "Noto Sans Medefaidrin Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMedefaidrin[wght].ttf","fullname": "Noto Sans Medefaidrin Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMedefaidrin[wght].ttf","fullname": "Noto Sans Medefaidrin SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMedefaidrin[wght].ttf","fullname": "Noto Sans Medefaidrin Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMedefaidrin[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMeeteiMayek[wght].ttf","fullname": "Noto Sans Meetei Mayek Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMeeteiMayek[wght].ttf","fullname": "Noto Sans Meetei Mayek Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMeeteiMayek[wght].ttf","fullname": "Noto Sans Meetei Mayek ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMeeteiMayek[wght].ttf","fullname": "Noto Sans Meetei Mayek Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMeeteiMayek[wght].ttf","fullname": "Noto Sans Meetei Mayek Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMeeteiMayek[wght].ttf","fullname": "Noto Sans Meetei Mayek SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMeeteiMayek[wght].ttf","fullname": "Noto Sans Meetei Mayek Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMeeteiMayek[wght].ttf","fullname": "Noto Sans Meetei Mayek ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMeeteiMayek[wght].ttf","fullname": "Noto Sans Meetei Mayek Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMeeteiMayek[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMendeKikakui-Regular.otf","fullname": "Noto Sans Mende Kikakui Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMeroitic-Regular.otf","fullname": "Noto Sans Meroitic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMiao-Regular.otf","fullname": "Noto Sans Miao Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansModi-Regular.otf","fullname": "Noto Sans Modi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMongolian-Regular.otf","fullname": "Noto Sans Mongolian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMono[wdth,wght].ttf","fullname": "Noto Sans Mono Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMono[wdth,wght].ttf","fullname": "Noto Sans Mono Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMono[wdth,wght].ttf","fullname": "Noto Sans Mono ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMono[wdth,wght].ttf","fullname": "Noto Sans Mono Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMono[wdth,wght].ttf","fullname": "Noto Sans Mono Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMono[wdth,wght].ttf","fullname": "Noto Sans Mono SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMono[wdth,wght].ttf","fullname": "Noto Sans Mono Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMono[wdth,wght].ttf","fullname": "Noto Sans Mono ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMono[wdth,wght].ttf","fullname": "Noto Sans Mono Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMono[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMro-Regular.otf","fullname": "Noto Sans Mro Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMultani-Regular.otf","fullname": "Noto Sans Multani Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMyanmar[wdth,wght].ttf","fullname": "Noto Sans Myanmar Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMyanmar[wdth,wght].ttf","fullname": "Noto Sans Myanmar Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMyanmar[wdth,wght].ttf","fullname": "Noto Sans Myanmar ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMyanmar[wdth,wght].ttf","fullname": "Noto Sans Myanmar Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMyanmar[wdth,wght].ttf","fullname": "Noto Sans Myanmar Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMyanmar[wdth,wght].ttf","fullname": "Noto Sans Myanmar SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMyanmar[wdth,wght].ttf","fullname": "Noto Sans Myanmar Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMyanmar[wdth,wght].ttf","fullname": "Noto Sans Myanmar ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMyanmar[wdth,wght].ttf","fullname": "Noto Sans Myanmar Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansMyanmar[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNKo-Regular.otf","fullname": "Noto Sans NKo Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNKoUnjoined[wght].ttf","fullname": "Noto Sans NKo Unjoined Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNKoUnjoined[wght].ttf","fullname": "Noto Sans NKo Unjoined Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNKoUnjoined[wght].ttf","fullname": "Noto Sans NKo Unjoined SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNKoUnjoined[wght].ttf","fullname": "Noto Sans NKo Unjoined Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNKoUnjoined[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNabataean-Regular.otf","fullname": "Noto Sans Nabataean Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNagMundari[wght].ttf","fullname": "Noto Sans Nag Mundari Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNagMundari[wght].ttf","fullname": "Noto Sans Nag Mundari Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNagMundari[wght].ttf","fullname": "Noto Sans Nag Mundari SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNagMundari[wght].ttf","fullname": "Noto Sans Nag Mundari Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNagMundari[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNandinagari-Regular.otf","fullname": "Noto Sans Nandinagari Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNewTaiLue[wght].ttf","fullname": "Noto Sans New Tai Lue Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNewTaiLue[wght].ttf","fullname": "Noto Sans New Tai Lue Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNewTaiLue[wght].ttf","fullname": "Noto Sans New Tai Lue SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNewTaiLue[wght].ttf","fullname": "Noto Sans New Tai Lue Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNewTaiLue[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNewa-Regular.otf","fullname": "Noto Sans Newa Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansNushu-Regular.otf","fullname": "Noto Sans Nushu Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOgham-Regular.otf","fullname": "Noto Sans Ogham Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOlChiki[wght].ttf","fullname": "Noto Sans Ol Chiki Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOlChiki[wght].ttf","fullname": "Noto Sans Ol Chiki Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOlChiki[wght].ttf","fullname": "Noto Sans Ol Chiki SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOlChiki[wght].ttf","fullname": "Noto Sans Ol Chiki Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOlChiki[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOldHungarian-Regular.otf","fullname": "Noto Sans Old Hungarian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOldItalic-Regular.otf","fullname": "Noto Sans Old Italic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOldNorthArabian-Regular.otf","fullname": "Noto Sans Old North Arabian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOldPermic-Regular.otf","fullname": "Noto Sans Old Permic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOldPersian-Regular.otf","fullname": "Noto Sans Old Persian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOldSogdian-Regular.otf","fullname": "Noto Sans Old Sogdian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOldSouthArabian-Regular.otf","fullname": "Noto Sans Old South Arabian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOldTurkic-Regular.otf","fullname": "Noto Sans Old Turkic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOriya[wdth,wght].ttf","fullname": "Noto Sans Oriya Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOriya[wdth,wght].ttf","fullname": "Noto Sans Oriya Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOriya[wdth,wght].ttf","fullname": "Noto Sans Oriya ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOriya[wdth,wght].ttf","fullname": "Noto Sans Oriya Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOriya[wdth,wght].ttf","fullname": "Noto Sans Oriya Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOriya[wdth,wght].ttf","fullname": "Noto Sans Oriya SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOriya[wdth,wght].ttf","fullname": "Noto Sans Oriya Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOriya[wdth,wght].ttf","fullname": "Noto Sans Oriya ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOriya[wdth,wght].ttf","fullname": "Noto Sans Oriya Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOriya[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOsage-Regular.otf","fullname": "Noto Sans Osage Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansOsmanya-Regular.otf","fullname": "Noto Sans Osmanya Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansPahawhHmong-Regular.otf","fullname": "Noto Sans Pahawh Hmong Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansPalmyrene-Regular.otf","fullname": "Noto Sans Palmyrene Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansPauCinHau-Regular.otf","fullname": "Noto Sans Pau Cin Hau Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansPhags-Pa-Regular.otf","fullname": "Noto Sans Phags-Pa Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansPhagsPa-Regular.otf","fullname": "Noto Sans PhagsPa Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansPhoenician-Regular.otf","fullname": "Noto Sans Phoenician Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansPsalterPahlavi-Regular.otf","fullname": "Noto Sans Psalter Pahlavi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansRejang-Regular.otf","fullname": "Noto Sans Rejang Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansRunic-Regular.otf","fullname": "Noto Sans Runic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSamaritan-Regular.otf","fullname": "Noto Sans Samaritan Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSaurashtra-Regular.otf","fullname": "Noto Sans Saurashtra Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSharada-Regular.otf","fullname": "Noto Sans Sharada Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansShavian-Regular.otf","fullname": "Noto Sans Shavian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSiddham-Regular.otf","fullname": "Noto Sans Siddham Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSignWriting-Regular.otf","fullname": "Noto Sans SignWriting Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSinhala[wdth,wght].ttf","fullname": "Noto Sans Sinhala Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSinhala[wdth,wght].ttf","fullname": "Noto Sans Sinhala Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSinhala[wdth,wght].ttf","fullname": "Noto Sans Sinhala ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSinhala[wdth,wght].ttf","fullname": "Noto Sans Sinhala Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSinhala[wdth,wght].ttf","fullname": "Noto Sans Sinhala Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSinhala[wdth,wght].ttf","fullname": "Noto Sans Sinhala SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSinhala[wdth,wght].ttf","fullname": "Noto Sans Sinhala Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSinhala[wdth,wght].ttf","fullname": "Noto Sans Sinhala ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSinhala[wdth,wght].ttf","fullname": "Noto Sans Sinhala Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSinhala[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSogdian-Regular.otf","fullname": "Noto Sans Sogdian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSoraSompeng[wght].ttf","fullname": "Noto Sans Sora Sompeng Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSoraSompeng[wght].ttf","fullname": "Noto Sans Sora Sompeng Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSoraSompeng[wght].ttf","fullname": "Noto Sans Sora Sompeng SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSoraSompeng[wght].ttf","fullname": "Noto Sans Sora Sompeng Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSoraSompeng[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSoyombo-Regular.otf","fullname": "Noto Sans Soyombo Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSundanese[wght].ttf","fullname": "Noto Sans Sundanese Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSundanese[wght].ttf","fullname": "Noto Sans Sundanese Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSundanese[wght].ttf","fullname": "Noto Sans Sundanese SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSundanese[wght].ttf","fullname": "Noto Sans Sundanese Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSundanese[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSylotiNagri-Regular.otf","fullname": "Noto Sans Syloti Nagri Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSymbols2-Regular.otf","fullname": "Noto Sans Symbols 2 Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSymbols[wght].ttf","fullname": "Noto Sans Symbols Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSymbols[wght].ttf","fullname": "Noto Sans Symbols Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSymbols[wght].ttf","fullname": "Noto Sans Symbols ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSymbols[wght].ttf","fullname": "Noto Sans Symbols Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSymbols[wght].ttf","fullname": "Noto Sans Symbols Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSymbols[wght].ttf","fullname": "Noto Sans Symbols SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSymbols[wght].ttf","fullname": "Noto Sans Symbols Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSymbols[wght].ttf","fullname": "Noto Sans Symbols ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSymbols[wght].ttf","fullname": "Noto Sans Symbols Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSymbols[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacEastern[wght].ttf","fullname": "Noto Sans Syriac Eastern Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacEastern[wght].ttf","fullname": "Noto Sans Syriac Eastern Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacEastern[wght].ttf","fullname": "Noto Sans Syriac Eastern ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacEastern[wght].ttf","fullname": "Noto Sans Syriac Eastern Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacEastern[wght].ttf","fullname": "Noto Sans Syriac Eastern Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacEastern[wght].ttf","fullname": "Noto Sans Syriac Eastern SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacEastern[wght].ttf","fullname": "Noto Sans Syriac Eastern Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacEastern[wght].ttf","fullname": "Noto Sans Syriac Eastern ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacEastern[wght].ttf","fullname": "Noto Sans Syriac Eastern Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacEastern[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacWestern[wght].ttf","fullname": "Noto Sans Syriac Western Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacWestern[wght].ttf","fullname": "Noto Sans Syriac Western Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacWestern[wght].ttf","fullname": "Noto Sans Syriac Western ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacWestern[wght].ttf","fullname": "Noto Sans Syriac Western Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacWestern[wght].ttf","fullname": "Noto Sans Syriac Western Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacWestern[wght].ttf","fullname": "Noto Sans Syriac Western SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacWestern[wght].ttf","fullname": "Noto Sans Syriac Western Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacWestern[wght].ttf","fullname": "Noto Sans Syriac Western ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacWestern[wght].ttf","fullname": "Noto Sans Syriac Western Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriacWestern[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriac[wght].ttf","fullname": "Noto Sans Syriac Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriac[wght].ttf","fullname": "Noto Sans Syriac Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriac[wght].ttf","fullname": "Noto Sans Syriac ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriac[wght].ttf","fullname": "Noto Sans Syriac Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriac[wght].ttf","fullname": "Noto Sans Syriac Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriac[wght].ttf","fullname": "Noto Sans Syriac SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriac[wght].ttf","fullname": "Noto Sans Syriac Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriac[wght].ttf","fullname": "Noto Sans Syriac ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriac[wght].ttf","fullname": "Noto Sans Syriac Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansSyriac[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTagalog-Regular.otf","fullname": "Noto Sans Tagalog Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTagbanwa-Regular.otf","fullname": "Noto Sans Tagbanwa Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTaiLe-Regular.otf","fullname": "Noto Sans Tai Le Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTaiTham[wght].ttf","fullname": "Noto Sans Tai Tham Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTaiTham[wght].ttf","fullname": "Noto Sans Tai Tham Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTaiTham[wght].ttf","fullname": "Noto Sans Tai Tham SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTaiTham[wght].ttf","fullname": "Noto Sans Tai Tham Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTaiTham[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTaiViet-Regular.otf","fullname": "Noto Sans Tai Viet Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTakri-Regular.otf","fullname": "Noto Sans Takri Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTamilSupplement-Regular.otf","fullname": "Noto Sans Tamil Supplement Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTamil[wdth,wght].ttf","fullname": "Noto Sans Tamil Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTamil[wdth,wght].ttf","fullname": "Noto Sans Tamil Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTamil[wdth,wght].ttf","fullname": "Noto Sans Tamil ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTamil[wdth,wght].ttf","fullname": "Noto Sans Tamil Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTamil[wdth,wght].ttf","fullname": "Noto Sans Tamil Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTamil[wdth,wght].ttf","fullname": "Noto Sans Tamil SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTamil[wdth,wght].ttf","fullname": "Noto Sans Tamil Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTamil[wdth,wght].ttf","fullname": "Noto Sans Tamil ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTamil[wdth,wght].ttf","fullname": "Noto Sans Tamil Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTamil[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTangsa[wght].ttf","fullname": "Noto Sans Tangsa Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTangsa[wght].ttf","fullname": "Noto Sans Tangsa Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTangsa[wght].ttf","fullname": "Noto Sans Tangsa SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTangsa[wght].ttf","fullname": "Noto Sans Tangsa Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTangsa[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTelugu[wdth,wght].ttf","fullname": "Noto Sans Telugu Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTelugu[wdth,wght].ttf","fullname": "Noto Sans Telugu Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTelugu[wdth,wght].ttf","fullname": "Noto Sans Telugu ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTelugu[wdth,wght].ttf","fullname": "Noto Sans Telugu Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTelugu[wdth,wght].ttf","fullname": "Noto Sans Telugu Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTelugu[wdth,wght].ttf","fullname": "Noto Sans Telugu SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTelugu[wdth,wght].ttf","fullname": "Noto Sans Telugu Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTelugu[wdth,wght].ttf","fullname": "Noto Sans Telugu ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTelugu[wdth,wght].ttf","fullname": "Noto Sans Telugu Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTelugu[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTest[wght].ttf","fullname": "Noto Sans Test Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaana[wght].ttf","fullname": "Noto Sans Thaana Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaana[wght].ttf","fullname": "Noto Sans Thaana Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaana[wght].ttf","fullname": "Noto Sans Thaana ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaana[wght].ttf","fullname": "Noto Sans Thaana Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaana[wght].ttf","fullname": "Noto Sans Thaana Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaana[wght].ttf","fullname": "Noto Sans Thaana SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaana[wght].ttf","fullname": "Noto Sans Thaana Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaana[wght].ttf","fullname": "Noto Sans Thaana ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaana[wght].ttf","fullname": "Noto Sans Thaana Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaana[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-Black.otf","fullname": "Noto Sans Thai Looped Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-Bold.otf","fullname": "Noto Sans Thai Looped Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-Condensed.otf","fullname": "Noto Sans Thai Looped Condensed Condensed,Noto Sans Thai Looped Condensed Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-CondensedBlack.otf","fullname": "Noto Sans Thai Looped Condensed Condensed Black,Noto Sans Thai Looped Condensed Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-CondensedBold.otf","fullname": "Noto Sans Thai Looped Condensed Condensed Bold,Noto Sans Thai Looped Condensed Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-CondensedExtraBold.otf","fullname": "Noto Sans Thai Looped Condensed Condensed ExtraBold,Noto Sans Thai Looped Condensed ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-CondensedExtraLight.otf","fullname": "Noto Sans Thai Looped Condensed Condensed ExtraLight,Noto Sans Thai Looped Condensed ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-CondensedLight.otf","fullname": "Noto Sans Thai Looped Condensed Condensed Light,Noto Sans Thai Looped Condensed Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-CondensedMedium.otf","fullname": "Noto Sans Thai Looped Condensed Condensed Medium,Noto Sans Thai Looped Condensed Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-CondensedSemiBold.otf","fullname": "Noto Sans Thai Looped Condensed Condensed SemiBold,Noto Sans Thai Looped Condensed SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-CondensedThin.otf","fullname": "Noto Sans Thai Looped Condensed Condensed Thin,Noto Sans Thai Looped Condensed Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-ExtraBold.otf","fullname": "Noto Sans Thai Looped ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-ExtraCondensed.otf","fullname": "Noto Sans Thai Looped ExtraCondensed ExtraCondensed,Noto Sans Thai Looped ExtraCondensed Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-ExtraCondensedBlack.otf","fullname": "Noto Sans Thai Looped ExtraCondensed ExtraCondensed Black,Noto Sans Thai Looped ExtraCondensed Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-ExtraCondensedBold.otf","fullname": "Noto Sans Thai Looped ExtraCondensed ExtraCondensed Bold,Noto Sans Thai Looped ExtraCondensed Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-ExtraCondensedExtraBold.otf","fullname": "Noto Sans Thai Looped ExtraCondensed ExtraCondensed ExtraBold,Noto Sans Thai Looped ExtraCondensed ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-ExtraCondensedExtraLight.otf","fullname": "Noto Sans Thai Looped ExtraCondensed ExtraCondensed ExtraLight,Noto Sans Thai Looped ExtraCondensed ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-ExtraCondensedLight.otf","fullname": "Noto Sans Thai Looped ExtraCondensed ExtraCondensed Light,Noto Sans Thai Looped ExtraCondensed Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-ExtraCondensedMedium.otf","fullname": "Noto Sans Thai Looped ExtraCondensed ExtraCondensed Medium,Noto Sans Thai Looped ExtraCondensed Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-ExtraCondensedSemiBold.otf","fullname": "Noto Sans Thai Looped ExtraCondensed ExtraCondensed SemiBold,Noto Sans Thai Looped ExtraCondensed SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-ExtraCondensedThin.otf","fullname": "Noto Sans Thai Looped ExtraCondensed ExtraCondensed Thin,Noto Sans Thai Looped ExtraCondensed Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-ExtraLight.otf","fullname": "Noto Sans Thai Looped ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-Light.otf","fullname": "Noto Sans Thai Looped Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-Medium.otf","fullname": "Noto Sans Thai Looped Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-Regular.otf","fullname": "Noto Sans Thai Looped Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-SemiBold.otf","fullname": "Noto Sans Thai Looped SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-SemiCondensed.otf","fullname": "Noto Sans Thai Looped SemiCondensed SemiCondensed,Noto Sans Thai Looped SemiCondensed Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-SemiCondensedBlack.otf","fullname": "Noto Sans Thai Looped SemiCondensed SemiCondensed Black,Noto Sans Thai Looped SemiCondensed Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-SemiCondensedBold.otf","fullname": "Noto Sans Thai Looped SemiCondensed SemiCondensed Bold,Noto Sans Thai Looped SemiCondensed Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-SemiCondensedExtraBold.otf","fullname": "Noto Sans Thai Looped SemiCondensed SemiCondensed ExtraBold,Noto Sans Thai Looped SemiCondensed ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-SemiCondensedExtraLight.otf","fullname": "Noto Sans Thai Looped SemiCondensed SemiCondensed ExtraLight,Noto Sans Thai Looped SemiCondensed ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-SemiCondensedLight.otf","fullname": "Noto Sans Thai Looped SemiCondensed SemiCondensed Light,Noto Sans Thai Looped SemiCondensed Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-SemiCondensedMedium.otf","fullname": "Noto Sans Thai Looped SemiCondensed SemiCondensed Medium,Noto Sans Thai Looped SemiCondensed Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-SemiCondensedSemiBold.otf","fullname": "Noto Sans Thai Looped SemiCondensed SemiCondensed SemiBold,Noto Sans Thai Looped SemiCondensed SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-SemiCondensedThin.otf","fullname": "Noto Sans Thai Looped SemiCondensed SemiCondensed Thin,Noto Sans Thai Looped SemiCondensed Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThaiLooped-Thin.otf","fullname": "Noto Sans Thai Looped Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThai[wdth,wght].ttf","fullname": "Noto Sans Thai Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThai[wdth,wght].ttf","fullname": "Noto Sans Thai Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThai[wdth,wght].ttf","fullname": "Noto Sans Thai ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThai[wdth,wght].ttf","fullname": "Noto Sans Thai Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThai[wdth,wght].ttf","fullname": "Noto Sans Thai Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThai[wdth,wght].ttf","fullname": "Noto Sans Thai SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThai[wdth,wght].ttf","fullname": "Noto Sans Thai Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThai[wdth,wght].ttf","fullname": "Noto Sans Thai ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThai[wdth,wght].ttf","fullname": "Noto Sans Thai Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansThai[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTifinagh-Regular.otf","fullname": "Noto Sans Tifinagh Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTifinaghAPT-Regular.otf","fullname": "Noto Sans Tifinagh APT Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTifinaghAdrar-Regular.otf","fullname": "Noto Sans Tifinagh Adrar Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTifinaghAgrawImazighen-Regular.otf","fullname": "Noto Sans Tifinagh Agraw Imazighen Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTifinaghAhaggar-Regular.otf","fullname": "Noto Sans Tifinagh Ahaggar Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTifinaghAir-Regular.otf","fullname": "Noto Sans Tifinagh Air Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTifinaghAzawagh-Regular.otf","fullname": "Noto Sans Tifinagh Azawagh Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTifinaghGhat-Regular.otf","fullname": "Noto Sans Tifinagh Ghat Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTifinaghHawad-Regular.otf","fullname": "Noto Sans Tifinagh Hawad Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTifinaghRhissaIxa-Regular.otf","fullname": "Noto Sans Tifinagh Rhissa Ixa Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTifinaghSIL-Regular.otf","fullname": "Noto Sans Tifinagh SIL Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTifinaghTawellemmet-Regular.otf","fullname": "Noto Sans Tifinagh Tawellemmet Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansTirhuta-Regular.otf","fullname": "Noto Sans Tirhuta Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansUgaritic-Regular.otf","fullname": "Noto Sans Ugaritic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansVai-Regular.otf","fullname": "Noto Sans Vai Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansVithkuqi[wght].ttf","fullname": "Noto Sans Vithkuqi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansVithkuqi[wght].ttf","fullname": "Noto Sans Vithkuqi Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansVithkuqi[wght].ttf","fullname": "Noto Sans Vithkuqi SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansVithkuqi[wght].ttf","fullname": "Noto Sans Vithkuqi Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansVithkuqi[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansWancho-Regular.otf","fullname": "Noto Sans Wancho Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansWarangCiti-Regular.otf","fullname": "Noto Sans Warang Citi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansYi-Regular.otf","fullname": "Noto Sans Yi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSansZanabazarSquare-Regular.otf","fullname": "Noto Sans Zanabazar Square Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans[wdth,wght].ttf","fullname": "Noto Sans Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans[wdth,wght].ttf","fullname": "Noto Sans Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans[wdth,wght].ttf","fullname": "Noto Sans ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans[wdth,wght].ttf","fullname": "Noto Sans Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans[wdth,wght].ttf","fullname": "Noto Sans Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans[wdth,wght].ttf","fullname": "Noto Sans SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans[wdth,wght].ttf","fullname": "Noto Sans Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans[wdth,wght].ttf","fullname": "Noto Sans ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans[wdth,wght].ttf","fullname": "Noto Sans Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSans[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif-Italic[wdth,wght].ttf","fullname": "Noto Serif Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif-Italic[wdth,wght].ttf","fullname": "Noto Serif Thin Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif-Italic[wdth,wght].ttf","fullname": "Noto Serif ExtraLight Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif-Italic[wdth,wght].ttf","fullname": "Noto Serif Light Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif-Italic[wdth,wght].ttf","fullname": "Noto Serif Medium Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif-Italic[wdth,wght].ttf","fullname": "Noto Serif SemiBold Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif-Italic[wdth,wght].ttf","fullname": "Noto Serif Bold Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif-Italic[wdth,wght].ttf","fullname": "Noto Serif ExtraBold Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif-Italic[wdth,wght].ttf","fullname": "Noto Serif Black Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif-Italic[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifAhom-Regular.otf","fullname": "Noto Serif Ahom Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifArmenian[wdth,wght].ttf","fullname": "Noto Serif Armenian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifArmenian[wdth,wght].ttf","fullname": "Noto Serif Armenian Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifArmenian[wdth,wght].ttf","fullname": "Noto Serif Armenian ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifArmenian[wdth,wght].ttf","fullname": "Noto Serif Armenian Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifArmenian[wdth,wght].ttf","fullname": "Noto Serif Armenian Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifArmenian[wdth,wght].ttf","fullname": "Noto Serif Armenian SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifArmenian[wdth,wght].ttf","fullname": "Noto Serif Armenian Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifArmenian[wdth,wght].ttf","fullname": "Noto Serif Armenian ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifArmenian[wdth,wght].ttf","fullname": "Noto Serif Armenian Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifArmenian[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifBalinese-Regular.otf","fullname": "Noto Serif Balinese Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifBengali[wdth,wght].ttf","fullname": "Noto Serif Bengali Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifBengali[wdth,wght].ttf","fullname": "Noto Serif Bengali Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifBengali[wdth,wght].ttf","fullname": "Noto Serif Bengali ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifBengali[wdth,wght].ttf","fullname": "Noto Serif Bengali Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifBengali[wdth,wght].ttf","fullname": "Noto Serif Bengali Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifBengali[wdth,wght].ttf","fullname": "Noto Serif Bengali SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifBengali[wdth,wght].ttf","fullname": "Noto Serif Bengali Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifBengali[wdth,wght].ttf","fullname": "Noto Serif Bengali ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifBengali[wdth,wght].ttf","fullname": "Noto Serif Bengali Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifBengali[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDevanagari[wdth,wght].ttf","fullname": "Noto Serif Devanagari Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDevanagari[wdth,wght].ttf","fullname": "Noto Serif Devanagari Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDevanagari[wdth,wght].ttf","fullname": "Noto Serif Devanagari ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDevanagari[wdth,wght].ttf","fullname": "Noto Serif Devanagari Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDevanagari[wdth,wght].ttf","fullname": "Noto Serif Devanagari Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDevanagari[wdth,wght].ttf","fullname": "Noto Serif Devanagari SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDevanagari[wdth,wght].ttf","fullname": "Noto Serif Devanagari Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDevanagari[wdth,wght].ttf","fullname": "Noto Serif Devanagari ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDevanagari[wdth,wght].ttf","fullname": "Noto Serif Devanagari Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDevanagari[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay-Italic[wdth,wght].ttf","fullname": "Noto Serif Display Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay-Italic[wdth,wght].ttf","fullname": "Noto Serif Display Thin Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay-Italic[wdth,wght].ttf","fullname": "Noto Serif Display ExtraLight Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay-Italic[wdth,wght].ttf","fullname": "Noto Serif Display Light Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay-Italic[wdth,wght].ttf","fullname": "Noto Serif Display Medium Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay-Italic[wdth,wght].ttf","fullname": "Noto Serif Display SemiBold Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay-Italic[wdth,wght].ttf","fullname": "Noto Serif Display Bold Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay-Italic[wdth,wght].ttf","fullname": "Noto Serif Display ExtraBold Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay-Italic[wdth,wght].ttf","fullname": "Noto Serif Display Black Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay-Italic[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay[wdth,wght].ttf","fullname": "Noto Serif Display Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay[wdth,wght].ttf","fullname": "Noto Serif Display Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay[wdth,wght].ttf","fullname": "Noto Serif Display ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay[wdth,wght].ttf","fullname": "Noto Serif Display Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay[wdth,wght].ttf","fullname": "Noto Serif Display Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay[wdth,wght].ttf","fullname": "Noto Serif Display SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay[wdth,wght].ttf","fullname": "Noto Serif Display Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay[wdth,wght].ttf","fullname": "Noto Serif Display ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay[wdth,wght].ttf","fullname": "Noto Serif Display Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDisplay[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDivesAkuru-Regular.otf","fullname": "Noto Serif Dives Akuru Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifDogra-Regular.otf","fullname": "Noto Serif Dogra Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifEthiopic[wdth,wght].ttf","fullname": "Noto Serif Ethiopic Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifEthiopic[wdth,wght].ttf","fullname": "Noto Serif Ethiopic Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifEthiopic[wdth,wght].ttf","fullname": "Noto Serif Ethiopic ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifEthiopic[wdth,wght].ttf","fullname": "Noto Serif Ethiopic Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifEthiopic[wdth,wght].ttf","fullname": "Noto Serif Ethiopic Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifEthiopic[wdth,wght].ttf","fullname": "Noto Serif Ethiopic SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifEthiopic[wdth,wght].ttf","fullname": "Noto Serif Ethiopic Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifEthiopic[wdth,wght].ttf","fullname": "Noto Serif Ethiopic ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifEthiopic[wdth,wght].ttf","fullname": "Noto Serif Ethiopic Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifEthiopic[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGeorgian[wdth,wght].ttf","fullname": "Noto Serif Georgian Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGeorgian[wdth,wght].ttf","fullname": "Noto Serif Georgian Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGeorgian[wdth,wght].ttf","fullname": "Noto Serif Georgian ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGeorgian[wdth,wght].ttf","fullname": "Noto Serif Georgian Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGeorgian[wdth,wght].ttf","fullname": "Noto Serif Georgian Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGeorgian[wdth,wght].ttf","fullname": "Noto Serif Georgian SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGeorgian[wdth,wght].ttf","fullname": "Noto Serif Georgian Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGeorgian[wdth,wght].ttf","fullname": "Noto Serif Georgian ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGeorgian[wdth,wght].ttf","fullname": "Noto Serif Georgian Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGeorgian[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGrantha-Regular.otf","fullname": "Noto Serif Grantha Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGujarati[wght].ttf","fullname": "Noto Serif Gujarati Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGujarati[wght].ttf","fullname": "Noto Serif Gujarati Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGujarati[wght].ttf","fullname": "Noto Serif Gujarati ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGujarati[wght].ttf","fullname": "Noto Serif Gujarati Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGujarati[wght].ttf","fullname": "Noto Serif Gujarati Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGujarati[wght].ttf","fullname": "Noto Serif Gujarati SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGujarati[wght].ttf","fullname": "Noto Serif Gujarati Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGujarati[wght].ttf","fullname": "Noto Serif Gujarati ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGujarati[wght].ttf","fullname": "Noto Serif Gujarati Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGujarati[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGurmukhi[wght].ttf","fullname": "Noto Serif Gurmukhi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGurmukhi[wght].ttf","fullname": "Noto Serif Gurmukhi Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGurmukhi[wght].ttf","fullname": "Noto Serif Gurmukhi ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGurmukhi[wght].ttf","fullname": "Noto Serif Gurmukhi Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGurmukhi[wght].ttf","fullname": "Noto Serif Gurmukhi Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGurmukhi[wght].ttf","fullname": "Noto Serif Gurmukhi SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGurmukhi[wght].ttf","fullname": "Noto Serif Gurmukhi Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGurmukhi[wght].ttf","fullname": "Noto Serif Gurmukhi ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGurmukhi[wght].ttf","fullname": "Noto Serif Gurmukhi Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifGurmukhi[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifHebrew[wdth,wght].ttf","fullname": "Noto Serif Hebrew Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifHebrew[wdth,wght].ttf","fullname": "Noto Serif Hebrew Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifHebrew[wdth,wght].ttf","fullname": "Noto Serif Hebrew ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifHebrew[wdth,wght].ttf","fullname": "Noto Serif Hebrew Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifHebrew[wdth,wght].ttf","fullname": "Noto Serif Hebrew Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifHebrew[wdth,wght].ttf","fullname": "Noto Serif Hebrew SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifHebrew[wdth,wght].ttf","fullname": "Noto Serif Hebrew Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifHebrew[wdth,wght].ttf","fullname": "Noto Serif Hebrew ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifHebrew[wdth,wght].ttf","fullname": "Noto Serif Hebrew Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifHebrew[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKannada[wght].ttf","fullname": "Noto Serif Kannada Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKannada[wght].ttf","fullname": "Noto Serif Kannada Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKannada[wght].ttf","fullname": "Noto Serif Kannada ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKannada[wght].ttf","fullname": "Noto Serif Kannada Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKannada[wght].ttf","fullname": "Noto Serif Kannada Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKannada[wght].ttf","fullname": "Noto Serif Kannada SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKannada[wght].ttf","fullname": "Noto Serif Kannada Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKannada[wght].ttf","fullname": "Noto Serif Kannada ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKannada[wght].ttf","fullname": "Noto Serif Kannada Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKannada[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKhitanSmallScript-Regular.otf","fullname": "Noto Serif Khitan Small Script Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKhmer[wdth,wght].ttf","fullname": "Noto Serif Khmer Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKhmer[wdth,wght].ttf","fullname": "Noto Serif Khmer Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKhmer[wdth,wght].ttf","fullname": "Noto Serif Khmer ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKhmer[wdth,wght].ttf","fullname": "Noto Serif Khmer Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKhmer[wdth,wght].ttf","fullname": "Noto Serif Khmer Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKhmer[wdth,wght].ttf","fullname": "Noto Serif Khmer SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKhmer[wdth,wght].ttf","fullname": "Noto Serif Khmer Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKhmer[wdth,wght].ttf","fullname": "Noto Serif Khmer ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKhmer[wdth,wght].ttf","fullname": "Noto Serif Khmer Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKhmer[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKhojki[wght].ttf","fullname": "Noto Serif Khojki Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKhojki[wght].ttf","fullname": "Noto Serif Khojki Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKhojki[wght].ttf","fullname": "Noto Serif Khojki SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKhojki[wght].ttf","fullname": "Noto Serif Khojki Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifKhojki[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifLao[wdth,wght].ttf","fullname": "Noto Serif Lao Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifLao[wdth,wght].ttf","fullname": "Noto Serif Lao Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifLao[wdth,wght].ttf","fullname": "Noto Serif Lao ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifLao[wdth,wght].ttf","fullname": "Noto Serif Lao Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifLao[wdth,wght].ttf","fullname": "Noto Serif Lao Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifLao[wdth,wght].ttf","fullname": "Noto Serif Lao SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifLao[wdth,wght].ttf","fullname": "Noto Serif Lao Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifLao[wdth,wght].ttf","fullname": "Noto Serif Lao ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifLao[wdth,wght].ttf","fullname": "Noto Serif Lao Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifLao[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMakasar-Regular.otf","fullname": "Noto Serif Makasar Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMalayalam[wght].ttf","fullname": "Noto Serif Malayalam Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMalayalam[wght].ttf","fullname": "Noto Serif Malayalam Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMalayalam[wght].ttf","fullname": "Noto Serif Malayalam ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMalayalam[wght].ttf","fullname": "Noto Serif Malayalam Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMalayalam[wght].ttf","fullname": "Noto Serif Malayalam Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMalayalam[wght].ttf","fullname": "Noto Serif Malayalam SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMalayalam[wght].ttf","fullname": "Noto Serif Malayalam Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMalayalam[wght].ttf","fullname": "Noto Serif Malayalam ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMalayalam[wght].ttf","fullname": "Noto Serif Malayalam Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMalayalam[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMyanmar[wdth,wght].ttf","fullname": "Noto Serif Myanmar Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMyanmar[wdth,wght].ttf","fullname": "Noto Serif Myanmar Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMyanmar[wdth,wght].ttf","fullname": "Noto Serif Myanmar ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMyanmar[wdth,wght].ttf","fullname": "Noto Serif Myanmar Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMyanmar[wdth,wght].ttf","fullname": "Noto Serif Myanmar Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMyanmar[wdth,wght].ttf","fullname": "Noto Serif Myanmar SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMyanmar[wdth,wght].ttf","fullname": "Noto Serif Myanmar Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMyanmar[wdth,wght].ttf","fullname": "Noto Serif Myanmar ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMyanmar[wdth,wght].ttf","fullname": "Noto Serif Myanmar Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifMyanmar[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifNPHmong[wght].ttf","fullname": "Noto Serif NP Hmong Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifNPHmong[wght].ttf","fullname": "Noto Serif NP Hmong Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifNPHmong[wght].ttf","fullname": "Noto Serif NP Hmong SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifNPHmong[wght].ttf","fullname": "Noto Serif NP Hmong Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifNPHmong[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifOldUyghur-Regular.otf","fullname": "Noto Serif Old Uyghur Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifOriya[wght].ttf","fullname": "Noto Serif Oriya Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifOriya[wght].ttf","fullname": "Noto Serif Oriya Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifOriya[wght].ttf","fullname": "Noto Serif Oriya SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifOriya[wght].ttf","fullname": "Noto Serif Oriya Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifOriya[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifOttomanSiyaq-Regular.otf","fullname": "Noto Serif Ottoman Siyaq Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifSinhala[wdth,wght].ttf","fullname": "Noto Serif Sinhala Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifSinhala[wdth,wght].ttf","fullname": "Noto Serif Sinhala Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifSinhala[wdth,wght].ttf","fullname": "Noto Serif Sinhala ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifSinhala[wdth,wght].ttf","fullname": "Noto Serif Sinhala Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifSinhala[wdth,wght].ttf","fullname": "Noto Serif Sinhala Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifSinhala[wdth,wght].ttf","fullname": "Noto Serif Sinhala SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifSinhala[wdth,wght].ttf","fullname": "Noto Serif Sinhala Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifSinhala[wdth,wght].ttf","fullname": "Noto Serif Sinhala ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifSinhala[wdth,wght].ttf","fullname": "Noto Serif Sinhala Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifSinhala[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil-Italic[wdth,wght].ttf","fullname": "Noto Serif Tamil Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil-Italic[wdth,wght].ttf","fullname": "Noto Serif Tamil Thin Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil-Italic[wdth,wght].ttf","fullname": "Noto Serif Tamil ExtraLight Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil-Italic[wdth,wght].ttf","fullname": "Noto Serif Tamil Light Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil-Italic[wdth,wght].ttf","fullname": "Noto Serif Tamil Medium Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil-Italic[wdth,wght].ttf","fullname": "Noto Serif Tamil SemiBold Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil-Italic[wdth,wght].ttf","fullname": "Noto Serif Tamil Bold Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil-Italic[wdth,wght].ttf","fullname": "Noto Serif Tamil ExtraBold Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil-Italic[wdth,wght].ttf","fullname": "Noto Serif Tamil Black Italic" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil-Italic[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil[wdth,wght].ttf","fullname": "Noto Serif Tamil Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil[wdth,wght].ttf","fullname": "Noto Serif Tamil Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil[wdth,wght].ttf","fullname": "Noto Serif Tamil ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil[wdth,wght].ttf","fullname": "Noto Serif Tamil Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil[wdth,wght].ttf","fullname": "Noto Serif Tamil Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil[wdth,wght].ttf","fullname": "Noto Serif Tamil SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil[wdth,wght].ttf","fullname": "Noto Serif Tamil Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil[wdth,wght].ttf","fullname": "Noto Serif Tamil ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil[wdth,wght].ttf","fullname": "Noto Serif Tamil Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTamil[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTangut-Regular.otf","fullname": "Noto Serif Tangut Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTelugu[wght].ttf","fullname": "Noto Serif Telugu Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTelugu[wght].ttf","fullname": "Noto Serif Telugu Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTelugu[wght].ttf","fullname": "Noto Serif Telugu ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTelugu[wght].ttf","fullname": "Noto Serif Telugu Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTelugu[wght].ttf","fullname": "Noto Serif Telugu Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTelugu[wght].ttf","fullname": "Noto Serif Telugu SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTelugu[wght].ttf","fullname": "Noto Serif Telugu Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTelugu[wght].ttf","fullname": "Noto Serif Telugu ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTelugu[wght].ttf","fullname": "Noto Serif Telugu Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTelugu[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTest[wght].ttf","fullname": "Noto Serif Test Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTest[wght].ttf","fullname": "Noto Serif Test Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTest[wght].ttf","fullname": "Noto Serif Test SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTest[wght].ttf","fullname": "Noto Serif Test Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTest[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifThai[wdth,wght].ttf","fullname": "Noto Serif Thai Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifThai[wdth,wght].ttf","fullname": "Noto Serif Thai Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifThai[wdth,wght].ttf","fullname": "Noto Serif Thai ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifThai[wdth,wght].ttf","fullname": "Noto Serif Thai Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifThai[wdth,wght].ttf","fullname": "Noto Serif Thai Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifThai[wdth,wght].ttf","fullname": "Noto Serif Thai SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifThai[wdth,wght].ttf","fullname": "Noto Serif Thai Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifThai[wdth,wght].ttf","fullname": "Noto Serif Thai ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifThai[wdth,wght].ttf","fullname": "Noto Serif Thai Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifThai[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTibetan[wght].ttf","fullname": "Noto Serif Tibetan Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTibetan[wght].ttf","fullname": "Noto Serif Tibetan Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTibetan[wght].ttf","fullname": "Noto Serif Tibetan ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTibetan[wght].ttf","fullname": "Noto Serif Tibetan Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTibetan[wght].ttf","fullname": "Noto Serif Tibetan Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTibetan[wght].ttf","fullname": "Noto Serif Tibetan SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTibetan[wght].ttf","fullname": "Noto Serif Tibetan Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTibetan[wght].ttf","fullname": "Noto Serif Tibetan ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTibetan[wght].ttf","fullname": "Noto Serif Tibetan Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifTibetan[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifToto[wght].ttf","fullname": "Noto Serif Toto Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifToto[wght].ttf","fullname": "Noto Serif Toto Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifToto[wght].ttf","fullname": "Noto Serif Toto SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifToto[wght].ttf","fullname": "Noto Serif Toto Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifToto[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifVithkuqi[wght].ttf","fullname": "Noto Serif Vithkuqi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifVithkuqi[wght].ttf","fullname": "Noto Serif Vithkuqi Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifVithkuqi[wght].ttf","fullname": "Noto Serif Vithkuqi SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifVithkuqi[wght].ttf","fullname": "Noto Serif Vithkuqi Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifVithkuqi[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifYezidi[wght].ttf","fullname": "Noto Serif Yezidi Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifYezidi[wght].ttf","fullname": "Noto Serif Yezidi Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifYezidi[wght].ttf","fullname": "Noto Serif Yezidi SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifYezidi[wght].ttf","fullname": "Noto Serif Yezidi Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerifYezidi[wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif[wdth,wght].ttf","fullname": "Noto Serif Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif[wdth,wght].ttf","fullname": "Noto Serif Thin" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif[wdth,wght].ttf","fullname": "Noto Serif ExtraLight" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif[wdth,wght].ttf","fullname": "Noto Serif Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif[wdth,wght].ttf","fullname": "Noto Serif Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif[wdth,wght].ttf","fullname": "Noto Serif SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif[wdth,wght].ttf","fullname": "Noto Serif Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif[wdth,wght].ttf","fullname": "Noto Serif ExtraBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif[wdth,wght].ttf","fullname": "Noto Serif Black" }
+{ "file": "./result-noto/share/fonts/noto/NotoSerif[wdth,wght].ttf","fullname": "" }
+{ "file": "./result-noto/share/fonts/noto/NotoTraditionalNushu[wght].ttf","fullname": "Noto Traditional Nushu Regular" }
+{ "file": "./result-noto/share/fonts/noto/NotoTraditionalNushu[wght].ttf","fullname": "Noto Traditional Nushu Light" }
+{ "file": "./result-noto/share/fonts/noto/NotoTraditionalNushu[wght].ttf","fullname": "Noto Traditional Nushu Medium" }
+{ "file": "./result-noto/share/fonts/noto/NotoTraditionalNushu[wght].ttf","fullname": "Noto Traditional Nushu SemiBold" }
+{ "file": "./result-noto/share/fonts/noto/NotoTraditionalNushu[wght].ttf","fullname": "Noto Traditional Nushu Bold" }
+{ "file": "./result-noto/share/fonts/noto/NotoTraditionalNushu[wght].ttf","fullname": "" }

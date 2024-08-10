@@ -9,7 +9,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "mbtiles://{openmaptiles}"
+      "url": "pmtiles://{openmappmtiles}"
     },
     "natural_earth_shaded_relief": {
       "maxzoom": 6,
@@ -41,7 +41,7 @@
       "source": "openmaptiles",
       "source-layer": "park",
       "paint": {
-        "fill-color": "#d8e8c8",
+        "fill-color": "#FF00FF",
         "fill-opacity": 0.7,
         "fill-outline-color": "rgba(95, 208, 100, 1)"
       }
@@ -81,7 +81,7 @@
       "filter": ["all", ["==", "class", "wood"]],
       "paint": {
         "fill-antialias": false,
-        "fill-color": "hsla(98, 61%, 72%, 0.7)",
+        "fill-color": "#FF00FF",
         "fill-opacity": 0.4
       }
     },
@@ -1250,7 +1250,7 @@
       "minzoom": 13,
       "maxzoom": 14,
       "paint": {
-        "fill-color": "hsl(35, 8%, 85%)",
+        "fill-color": "#FF00FF",
         "fill-outline-color": {
           "base": 1,
           "stops": [[13, "hsla(35, 6%, 79%, 0.32)"], [14, "hsl(35, 6%, 79%)"]]
@@ -1264,7 +1264,7 @@
       "source-layer": "building",
       "minzoom": 14,
       "paint": {
-        "fill-extrusion-color": "hsl(35, 8%, 85%)",
+        "fill-extrusion-color": "#0Fa00F",
         "fill-extrusion-height": {
           "property": "render_height",
           "type": "identity"
@@ -1295,7 +1295,6 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "boundary",
-      "maxzoom": 5,
       "filter": ["all", ["==", "admin_level", 2], ["!has", "claimed_by"]],
       "layout": {"line-cap": "round", "line-join": "round"},
       "paint": {
