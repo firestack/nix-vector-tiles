@@ -1,67 +1,27 @@
 { lib
-, stdenv
+, runCommand
 , jq
-, symlinkJoin
-, moreutils
-, optipng
-, map-sprite-packer ? null
 }:
 
 { name
+, style-name ? name
 , src
-, overrideJson
-, fonts
-, spriteDirectories ? null
-, spriteWidth ? 600
-, spriteHeight ? 800
+, overrideJson ? {}
 }: let
-  fontPath = symlinkJoin {
-    name = "combined-style-fonts";
-    paths = fonts;
-  };
-  dirArgs =
-    if spriteDirectories != null
-    then (builtins.foldl' (a: b: a + b) "" (map (dir: " --svgs ${dir}") spriteDirectories))
-    else "";
-  shouldPack = map-sprite-packer != null && spriteDirectories != null;
+  outputDir = "$out/share/map/styles/${style-name}";
 in
-  stdenv.mkDerivation {
-    inherit name src;
-    buildInputs =
-      [fonts jq moreutils optipng]
-      ++ (lib.optional shouldPack map-sprite-packer);
+  runCommand name {
+    buildInputs = [jq];
 
-    unpackPhase = "true";
+    inputOverrideJson = builtins.toJSON overrideJson;
+    passAsFile = ["inputOverrideJson"];
+  } ''
+      mkdir -p ${outputDir}
 
-    buildPhase = ''
-      echo -n '${builtins.toJSON overrideJson}' > override.json
-      cp ${src}/style.json ./style.json
-      jq '. * input' ./style.json override.json | sponge ./style.json
-      mkdir sprites
-      ${
-        if shouldPack
-        then ''
-          map-sprite-packer \
-            ${dirArgs} \
-            --width ${toString spriteWidth} \
-            --height ${toString spriteHeight} \
-            --output sprites
+      jq \
+        '. * input' \
+        ${src}/style.json \
+        $inputOverrideJsonPath \
+      > ${outputDir}/style.json
+    ''
 
-          optipng -o9 sprites/sprite.png
-          optipng -o9 sprites/sprite@2x.png
-        ''
-        else ""
-      }
-    '';
-
-    installPhase = ''
-      mkdir -p $out/share/map-style
-      ${
-        if shouldPack
-        then "mv sprites $out/share/map-style"
-        else "mkdir $out/share/map-style/sprites"
-      }
-      mv style.json $out/share/map-style/style.json
-      ln -s ${fontPath}/share/map-fonts $out/share/map-style/fonts
-    '';
-  }

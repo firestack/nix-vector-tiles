@@ -61,13 +61,13 @@ makeScope newScope (self: {
 			name = "mapbox-gl-styles-fhs";
 			paths = lib.mapAttrsToList
 				(name: value: buildTilesStyle {
+					name = name;
 					src = value;
-					fonts = [];
 					overrideJson = {
 						sources.openmaptiles.url = "{v3}";
-						# glyphs = "{glyphs}";
+						glyphs = "{fontstack}/{range}";
+						sprite = "{sprites}";
 					};
-					name = name;
 				})
 				(builtins.removeAttrs
 					mapbox-gl-styles
