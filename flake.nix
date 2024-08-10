@@ -17,9 +17,6 @@
   }: let
     buildForSystem = system: let
       pkgs = nixpkgs.legacyPackages.${system};
-      # overlays = [self.overlays.default];
-
-      # pkgs = import nixpkgs {inherit system overlays;};
 
       # metadataFnFn = config: tilesUrl:
       #   pkgs.buildTilesMetadata {
@@ -41,29 +38,6 @@
       #     };
       #   };
 
-      # tiles-nginx-bundle = style:
-      #   pkgs.buildTilesBundle {
-      #     metadataFn = metadataFnFn {settings.compress = "gzip";};
-      #     host = "http://127.0.0.1:8080";
-      #     styleFn = style;
-      #   };
-
-      # vm-builder = bundle:
-      #   (
-      #     nixpkgs.lib.nixosSystem
-      #     {
-      #       system = "x86_64-linux";
-      #       modules = [
-      #         {nixpkgs.overlays = overlays;}
-      #         "${nixpkgs}/nixos/modules/virtualisation/qemu-vm.nix"
-      #         (import ./demo-nginx.nix {inherit bundle;})
-      #       ];
-      #     }
-      #   )
-      #   .config
-      #   .system
-      #   .build
-      #   .vm;
     in {
         legacyPackages = let
           scope = pkgs.callPackage ./scope.nix {
