@@ -65,40 +65,13 @@
       #   .build
       #   .vm;
     in {
-      legacyPackages = {
-        scope = pkgs.callPackage ./scope.nix {
-          makeScope = pkgs.lib.makeScope;
-        };
-
-        inherit (pkgs) tilesStyles;
-      };
-
-      # packages = {
-      #   inherit (pkgs) build_pbf_glyphs;
-      # };
-      # apps = builtins.foldl' (left: right: left // right) {} (map (
-      #     key: {
-      #       "demo-${key}" = {
-      #         type = "app";
-      #         program = "${tiles-demo pkgs.tilesStyles.${key}}/bin/demo";
-      #       };
-      #       "demo-nginx-${key}" = {
-      #         type = "app";
-      #         program = "${vm-builder (tiles-nginx-bundle pkgs.tilesStyles.${key})}/bin/run-nixos-vm";
-      #       };
-      #     }
-      #   ) [
-      #     "maptiler-basic-gl-style"
-      #     "osm-bright-gl-style"
-      #     "positron-gl-style"
-      #     "dark-matter-gl-style"
-      #     "maptiler-terrain-gl-style"
-      #     "maptiler-3d-gl-style"
-      #     "fiord-color-gl-style"
-      #     "maptiler-toner-gl-style"
-      #     "osm-liberty"
-      #   ]);
-    };
+        legacyPackages = let
+          scope = pkgs.callPackage ./scope.nix {
+            makeScope = pkgs.lib.makeScope;
+          };
+        in  {
+          outputs = scope;
+        } // scope;
       };
     in
     (utils.lib.eachDefaultSystem buildForSystem);
