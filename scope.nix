@@ -6,7 +6,22 @@ makeScope newScope (self: {
 	build-pbf-glyphs = self.callPackage ./packages/build-pbf-glyphs {};
 
 	map-sprite-packer = self.callPackage ./packages/map-sprite-packer {};
+	# map-sprite-packer = self.callPackage (
+	# 	{ src
+	# 	, rustPlatform
+	# 	}: rustPlatform.buildRustPackage
+	# ) {
+	# 	src = map-sprite-packer-src;
+	# };
 	mapbox-gl-styles = self.callPackage ./styles.nix {};
+	mapbox-gl-styles-links = self.callPackage (
+		{ buildTileserverShare
+		, mapbox-gl-styles
+		}: buildTileserverShare {
+			name = "";
+			styles = builtins.removeAttrs mapbox-gl-styles [ "override" "overrideDerivation" ];
+		}) {};
+
 	buildSpriteSheet = self.callPackage ./build-sprites.nix {};
 
 	buildSpriteSheetFromStyleRepo = self.callPackage (
@@ -18,6 +33,48 @@ makeScope newScope (self: {
 			optimize = false;
 		}) {};
 
+	# sprites = self.callPackage ({ buildSpriteSheetFromStyleRepo, mapbox-gl-styles}: buildSpriteSheetFromStyleRepo mapbox-gl-styles.osm-liberty) {};
+	sprites = self.callPackage (
+		{ linkFarm
+		, lib
+		, buildSpriteSheetFromStyleRepo
+		, mapbox-gl-styles
+		}: linkFarm "out"
+			(builtins.mapAttrs
+				(_: buildSpriteSheetFromStyleRepo)
+				(lib.filterAttrs
+					(_: value: (value.passthru.icons-dirs or null) != null )
+					(builtins.removeAttrs
+						mapbox-gl-styles
+						[ "override" "overrideDerivation" ]
+					)
+				)
+			)
+		) {};
+
+	mapbox-gl-styles-fhs = self.callPackage (
+		{ lib
+		,	symlinkJoin
+		,	buildTilesStyle
+		,	mapbox-gl-styles
+		}: symlinkJoin {
+			name = "mapbox-gl-styles-fhs";
+			paths = lib.mapAttrsToList
+				(name: value: buildTilesStyle {
+					src = value;
+					fonts = [];
+					overrideJson = {
+						sources.openmaptiles.url = "{v3}";
+						# glyphs = "{glyphs}";
+					};
+					name = name;
+				})
+				(builtins.removeAttrs
+					mapbox-gl-styles
+					[ "override" "overrideDerivation" ]
+				);
+		}
+	) {};
 
 	# mapbox-gl-styles-package = lib.mapAttrs (name: style-src: ) self.mapbox-gl-styles;
 
@@ -35,23 +92,43 @@ makeScope newScope (self: {
 	# 		"${lib.getExe build_pbf_glyphs} ${noto-fonts}/share/fonts/noto $out/share/fonts/noto"
 	# 	])) {};
 
-	noto-tiles = self.callPackage ({ buildTilesFonts, noto-fonts }: buildTilesFonts {
-		name = "noto";
-		fonts = [noto-fonts];
-	}) {};
+	tileset = self.callPackage (
+		{ buildTileserverShare
+		, buildTiles
+		, buildTilesFonts
+		, linkFarm
 
-	roboto-tiles = self.callPackage ({ buildTilesFonts, roboto, noto-fonts }:
-		(buildTilesFonts {
-			name = "roboto";
-			fonts = [roboto noto-fonts];
-		})
-		.overrideAttrs (old: {
-			installPhase =
-				(old.installPhase or "")
-				+ ''
-				 mv $out/share/map-fonts/Roboto "$out/share/map-fonts/Roboto Regular"
-				'';
-		})) {};
+		, mapbox-gl-styles-fhs
+		, osm
+
+		, noto-fonts
+		, roboto
+		}: buildTileserverShare {
+			name = "tiles-test";
+
+			sources = linkFarm "sources" {
+				"mass.pmtiles" = buildTiles {
+					renumber = true;
+					src = osm.massachusetts;
+					name = osm.massachusetts.name;
+				};
+			};
+
+			fonts = linkFarm "font-glphs" {
+				# noto = buildTilesFonts {
+				# 	name = "noto";
+				# 	fonts = [noto-fonts];
+				# };
+				#
+				# roboto = buildTilesFonts {
+				# 	name = "roboto";
+				# 	fonts = [roboto];
+				# };
+			};
+
+			styles = "${mapbox-gl-styles-fhs}/share/map/styles";
+		}) {};
+
 
 	fetchGeofabrik = self.callPackage ./fetch-geofabrik.nix {};
 	osm.germany = self.fetchGeofabrik {
@@ -77,35 +154,45 @@ makeScope newScope (self: {
 		sha256 = "sha256-CwxG44skIq1+q1GTF9P520xYalIojU/bywvT85Ye644=";
 	};
 
-	tiles = self.buildTiles {
-		# inherit config;
-		# inherit (hessen) name;
-		# renumber = true;
-		src = self.osm.massachusetts;
-		name = self.osm.massachusetts.name;
-	};
-
 	tilesDir = self.callPackage ./make-xyz-tiles.nix {
 		src = self.tiles;
 	};
 
-	dark = self.tilesStyles.dark-matter-gl-style "" "" "";
-	basic = self.tilesStyles.maptiler-basic-gl-style "" "" "";
+	usedFontsFromStyles = self.callPackage (
+		{ lib
+		, runCommand
+		, jq
+		}:
+		{ styles
+		}: runCommand "used-styles.json"
+			{ buildInputs = [jq];}
+			(lib.concatLines [
+				"jq '"
+				"	["
+				"		inputs"
+				"		| .layers[].layout.\"text-font\""
+				"		| select(. != null)"
+				"		| map("
+				"			if type == \"array\""
+				"				then .[1][1]"
+				"			else ."
+				"				end"
+				"		)"
+				"	]"
+				"	| flatten(2)"
+				"	| unique"
+				"	' \\"
+				"${styles}/share/map/styles/*/style.json \\"
+				"> $out"
+			])
+	) {};
 
-	bundles.dark-matter-gl-style = self.buildTilesBundle {
-		host = "http://127.0.0.1:8081";
-		styleFn = self.tilesStyles.dark-matter-gl-style;
-		metadataFn = tilesUrl: self.buildTilesMetadata {
-			tileJson = {tiles = [tilesUrl];};
-			tiles = self.buildTiles {
-				# inherit config;
-				# inherit (hessen) name;
-				renumber = true;
-				src = self.osm.massachusetts;
-				name = self.osm.massachusetts.name;
-			};
-		};
-	};
+	mapbox-gl-styles-fhs-fonts-used = self.callPackage (
+		{ usedFontsFromStyles
+		, mapbox-gl-styles-fhs
+		}: usedFontsFromStyles { styles = mapbox-gl-styles-fhs; }
+		)
+		{};
 
 	tilemaker-shp-files = self.callPackage (
 		{ lib
