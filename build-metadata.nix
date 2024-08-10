@@ -26,6 +26,7 @@
 in
   runCommand "mapbox-vector-tiles" {
     buildInputs = [jq yajsv];
+    meta.description = "produces a TileJSON v3 schema verified spec from xyz tiles";
   } ''
     mkdir -p $out
 
