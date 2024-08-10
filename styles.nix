@@ -6,6 +6,7 @@
     repo =  "maptiler-basic-gl-style";
     rev = "tags/v1.9";
     sha256 = "sha256-LRzk0/r2bkAl4qxGNzhRs7QojsNmBWdUUD/d4aqzWu4=";
+    passthru.icons-dirs = ["/icons"];
   };
 
   osm-bright-gl-style =  fetchFromGitHub {
@@ -13,7 +14,7 @@
     repo =  "osm-bright-gl-style";
     rev = "tags/v1.9";
     sha256 = "sha256-X1ueE6cVTEA1D9ctjHMqWJQhdM37RZxciCBQUaQyG64=";
-    passthru.hi = "1";
+    passthru.icons-dirs = ["/icons"];
   };
 
   positron-gl-style =  fetchFromGitHub {
@@ -21,6 +22,8 @@
     repo =  "positron-gl-style";
     rev = "tags/v1.8";
     sha256 = "sha256-TV3a9in+q5WYS90GhIs1I8JNSUPJy67CmiPdIK1ZO0o=";
+    passthru.icons-dirs = ["/icons"];
+
   };
 
   dark-matter-gl-style =  fetchFromGitHub {
@@ -28,6 +31,7 @@
     repo =  "dark-matter-gl-style";
     rev = "tags/v1.8";
     sha256 = "sha256-+xT/QbU+VcTepD4A05sA5c97xAgXOwcIbAKPaifKYxQ=";
+    passthru.icons-dirs = ["/icons"];
   };
 
   maptiler-terrain-gl-style =  fetchFromGitHub {
@@ -49,6 +53,7 @@
     repo =  "fiord-color-gl-style";
     rev = "tags/v1.5";
     sha256 = "sha256-Vc+pO8NfMFe6j9P7/5RkS4G6yHTG2jOvFc4Iy0jaAck=";
+    passthru.icons-dirs = ["/icons"];
   };
 
   maptiler-toner-gl-style =  fetchFromGitHub {
@@ -56,6 +61,7 @@
     repo =  "maptiler-toner-gl-style";
     rev = "339e5b74c918e8b2787bb4910282d61a5de1d5ee";
     sha256 = "sha256-z3s1fPxEpjXzxPUg4tkPqdp8zvnrK7+L3QOa8uhF8wE=";
+    passthru.icons-dirs = ["/icons"];
   };
 
   osm-liberty =  fetchFromGitHub {
@@ -63,5 +69,7 @@
     repo =  "osm-liberty";
     rev = "539d0525421eb5be901ede630c49947dfe5a343f";
     sha256 = "sha256-njf1hqIRfoZUnHr3kUGlfCvVBZkIM9ZM6lR8WroOR9s=";
+    passthru.icons-dirs = ["/svgs/svgs_iconset" "/svgs/svgs_not_in_iconset"];
+    passthru.sprite-dir = "/sprites";
   };
 }
