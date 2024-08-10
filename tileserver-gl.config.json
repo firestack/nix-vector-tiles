@@ -6,10 +6,6 @@
       "mbtiles": "data",
       "pmtiles": "data"
     },
-    "domains": [
-      "localhost:8080",
-      "127.0.0.1:8080"
-    ],
     "formatQuality": {
       "jpeg": 80,
       "webp": 90
@@ -55,6 +51,9 @@
     }
  },
   "data": {
+    "openmappmtiles": {
+      "pmtiles": "mass.pmtiles"
+    },
     "openmaptiles": {
       "mbtiles": "mass.mbtiles"
     }
