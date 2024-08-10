@@ -7,6 +7,17 @@ makeScope newScope (self: {
 
 	map-sprite-packer = self.callPackage ./packages/map-sprite-packer {};
 	mapbox-gl-styles = self.callPackage ./styles.nix {};
+	buildSpriteSheet = self.callPackage ./build-sprites.nix {};
+
+	buildSpriteSheetFromStyleRepo = self.callPackage (
+		{ buildSpriteSheet
+		}:
+		src: buildSpriteSheet {
+			name = "${src.repo or ""}.sprites";
+			srcs = map (dir: src + dir) (src.passthru.icons-dirs or []);
+			optimize = false;
+		}) {};
+
 
 	# mapbox-gl-styles-package = lib.mapAttrs (name: style-src: ) self.mapbox-gl-styles;
 
