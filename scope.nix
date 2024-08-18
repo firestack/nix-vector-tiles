@@ -3,7 +3,7 @@
 , newScope
 }:
 makeScope newScope (self: {
-	build_pbf_glyphs = self.callPackage ./packages/build-pbf-glyphs {};
+	build-pbf-glyphs = self.callPackage ./packages/build-pbf-glyphs {};
 
 	mapbox-gl-styles = self.callPackage ./styles.nix {};
 
@@ -16,10 +16,10 @@ makeScope newScope (self: {
 	buildTilesBundle = self.callPackage ./build-bundle.nix {};
 	buildTilesMetadata = self.callPackage ./build-metadata.nix {};
 
-	noto-glyphs = self.callPackage ({ noto-fonts, build_pbf_glyphs, runCommand }:
-		runCommand "noto-glyphs" {} (lib.concatLines [
-			"${lib.getExe build_pbf_glyphs} ${noto-fonts}/share/fonts/noto $out/share/fonts/noto"
-		])) {};
+	# noto-glyphs = self.callPackage ({ noto-fonts, build_pbf_glyphs, runCommand }:
+	# 	runCommand "noto-glyphs" {} (lib.concatLines [
+	# 		"${lib.getExe build_pbf_glyphs} ${noto-fonts}/share/fonts/noto $out/share/fonts/noto"
+	# 	])) {};
 
 	noto-tiles = self.callPackage ({ buildTilesFonts, noto-fonts }: buildTilesFonts {
 		name = "noto";

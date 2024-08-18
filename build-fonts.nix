@@ -1,7 +1,7 @@
 { lib
 , stdenv
 , symlinkJoin
-, build_pbf_glyphs
+, build-pbf-glyphs
 , jq
 , writeText
 , fontconfig
@@ -30,7 +30,7 @@ stdenv.mkDerivation rec {
       mkdir -p tmp-out
       mkdir -p tmp-in
       ln -s "$ifile" tmp-in/
-      ${lib.getExe build_pbf_glyphs} tmp-in/ tmp-out/
+      ${lib.getExe build-pbf-glyphs} tmp-in/ tmp-out/
       mv "tmp-out/$(basename $ifile .$ext)" "fonts/$name"
       rm -r tmp-out
       rm -r tmp-in
