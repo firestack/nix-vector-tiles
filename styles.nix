@@ -1,6 +1,6 @@
 {
   fetchFromGitHub,
-}: {
+}: let cfg.styles = {
   maptiler-basic-gl-style =  fetchFromGitHub {
     owner = "openmaptiles";
     repo =  "maptiler-basic-gl-style";
@@ -72,4 +72,4 @@
     passthru.icons-dirs = ["/svgs/svgs_iconset" "/svgs/svgs_not_in_iconset"];
     passthru.sprite-dir = "/sprites";
   };
-}
+}; in cfg

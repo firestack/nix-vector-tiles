@@ -6,13 +6,7 @@ makeScope newScope (self: {
 	build-pbf-glyphs = self.callPackage ./packages/build-pbf-glyphs {};
 
 	map-sprite-packer = self.callPackage ./packages/map-sprite-packer {};
-	# map-sprite-packer = self.callPackage (
-	# 	{ src
-	# 	, rustPlatform
-	# 	}: rustPlatform.buildRustPackage
-	# ) {
-	# 	src = map-sprite-packer-src;
-	# };
+
 	mapbox-gl-styles = self.callPackage ./styles.nix {};
 	mapbox-gl-styles-links = self.callPackage (
 		{ buildTileserverShare
@@ -44,10 +38,7 @@ makeScope newScope (self: {
 				(_: buildSpriteSheetFromStyleRepo)
 				(lib.filterAttrs
 					(_: value: (value.passthru.icons-dirs or null) != null )
-					(builtins.removeAttrs
-						mapbox-gl-styles
-						[ "override" "overrideDerivation" ]
-					)
+					mapbox-gl-styles.styles
 				)
 			)
 		) {};
