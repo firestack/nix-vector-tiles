@@ -108,26 +108,7 @@ makeScope newScope (self: {
 		{};
 
 	#---- sprites
-	mapbox-gl-styles-fhs = self.callPackage (
-		{ lib
-		,	symlinkJoin
-		,	buildTilesStyle
-		,	mapbox-gl-styles
-		}: symlinkJoin {
-			name = "mapbox-gl-styles-fhs";
-			paths = lib.mapAttrsToList
-				(name: value: buildTilesStyle {
-					name = name;
-					src = value;
-					overrideJson = {
-						sources.openmaptiles.url = "{v3}";
-						glyphs = "{fontstack}/{range}";
-						sprite = "{sprites}";
-					};
-				})
-				mapbox-gl-styles.styles;
-		}
-	) {};
+
 
 	##### styles
 	buildTilesStyle = self.callPackage ./build-style.nix {};
@@ -195,6 +176,28 @@ makeScope newScope (self: {
 		}: usedFontsFromStyles { styles = mapbox-gl-styles-fhs; }
 		)
 		{};
+
+	mapbox-gl-styles-fhs = self.callPackage (
+		{ lib
+		,	symlinkJoin
+		,	buildTilesStyle
+		,	mapbox-gl-styles
+		}: symlinkJoin {
+			name = "mapbox-gl-styles-fhs";
+			paths = lib.mapAttrsToList
+				(name: value: buildTilesStyle {
+					name = name;
+					src = value;
+					overrideJson = {
+						sources.openmaptiles.url = "{v3}";
+						glyphs = "{fontstack}/{range}";
+						sprite = "{sprites}";
+					};
+				})
+				mapbox-gl-styles.styles;
+		}
+	) {};
+
 	#---- www
 
 
