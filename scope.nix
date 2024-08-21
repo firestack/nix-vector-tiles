@@ -8,13 +8,6 @@ makeScope newScope (self: {
 	map-sprite-packer = self.callPackage ./packages/map-sprite-packer {};
 
 	mapbox-gl-styles = self.callPackage ./styles.nix {};
-	mapbox-gl-styles-links = self.callPackage (
-		{ buildTileserverShare
-		, mapbox-gl-styles
-		}: buildTileserverShare {
-			name = "";
-			styles = mapbox-gl-styles.styles;
-		}) {};
 
 	buildSpriteSheet = self.callPackage ./build-sprites.nix {};
 
@@ -72,6 +65,15 @@ makeScope newScope (self: {
 	buildTilesFonts = self.callPackage ./build-fonts.nix {};
 
 	buildTileserverShare = self.callPackage ./build-tileserver-gl-share.nix {};
+	# mapbox-gl-styles-links = self.callPackage (
+	# 	{ buildTileserverShare
+	# 	, mapbox-gl-styles
+	# 	}: buildTileserverShare {
+	# 		name = "";
+	# 		sources =
+	# 		styles = mapbox-gl-styles.styles;
+	# 	}) {};
+
 
 	buildTiles = self.callPackage ./build-tiles.nix {};
 	buildTilesBundle = self.callPackage ./build-bundle.nix {};
