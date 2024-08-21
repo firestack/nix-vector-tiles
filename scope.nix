@@ -131,9 +131,11 @@ makeScope newScope (self: {
 	buildTilesStyle = self.callPackage ./build-style.nix {};
 	#---- styles
 
+	##### fonts
 	usedFontsFromStyles = self.callPackage ./used-fonts-from-styles.nix {};
-
 	buildTilesFonts = self.callPackage ./build-fonts.nix {};
+	#---- fonts
+
 
 	buildTileserverShare = self.callPackage ./build-tileserver-gl-share.nix {};
 	# mapbox-gl-styles-links = self.callPackage (
