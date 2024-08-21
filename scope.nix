@@ -146,34 +146,8 @@ makeScope newScope (self: {
 		src = self.tiles;
 	};
 
-	usedFontsFromStyles = self.callPackage (
-		{ lib
-		, runCommand
-		, jq
-		}:
-		{ styles
-		}: runCommand "used-styles.json"
-			{ buildInputs = [jq];}
-			(lib.concatLines [
-				"jq '"
-				"	["
-				"		inputs"
-				"		| .layers[].layout.\"text-font\""
-				"		| select(. != null)"
-				"		| map("
-				"			if type == \"array\""
-				"				then .[1][1]"
-				"			else ."
-				"				end"
-				"		)"
-				"	]"
-				"	| flatten(2)"
-				"	| unique"
-				"	' \\"
-				"${styles}/share/map/styles/*/style.json \\"
-				"> $out"
-			])
-	) {};
+	usedFontsFromStyles = self.callPackage ./used-fonts-from-styles.nix {
+	};
 
 	mapbox-gl-styles-fhs-fonts-used = self.callPackage (
 		{ usedFontsFromStyles
