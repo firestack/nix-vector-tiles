@@ -7,7 +7,71 @@ makeScope newScope (self: {
 
 	map-sprite-packer = self.callPackage ./packages/map-sprite-packer {};
 
+	fetchGeofabrik = self.callPackage ./fetch-geofabrik.nix {};
+
+	##### External Sources
 	mapbox-gl-styles = self.callPackage ./styles.nix {};
+
+	osm.germany = self.fetchGeofabrik {
+		name = "germany";
+		continent = "europe";
+		date = "230101";
+		sha256 = "sha256-G/9YWx4uEY6/yGVr2O5XqL6ivrlpX8Vs6xMlU2nT1DE=";
+	};
+
+	osm.hessen = self.fetchGeofabrik {
+		name = "hessen";
+		continent = "europe";
+		country = "germany";
+		date = "230101";
+		sha256 = "sha256-sOoPtIEY4TxSm/p0MGc9LGzQtQmIafGH0IWbkby95K8=";
+	};
+
+	osm.massachusetts = self.fetchGeofabrik {
+		name = "massachusetts";
+		continent = "north-america";
+		country = "us";
+		date = "240729";
+		sha256 = "sha256-CwxG44skIq1+q1GTF9P520xYalIojU/bywvT85Ye644=";
+	};
+
+	tilemaker-shp-files = self.callPackage (
+		{ lib
+		, stdenvNoCC
+		, fetchFromGitHub
+		, curl
+		, cacert
+		, unzip
+		}: stdenvNoCC.mkDerivation {
+			name = "tilemaker-shp-files";
+
+			src = fetchFromGitHub {
+				owner = "systemed";
+				repo = "tilemaker";
+				rev = "eab08d189ad97ddf5db7d915bcabe42ad3dab6af";
+				hash = "sha256-A4I2xwB7E+7iwaLt8NGoAVrPLSmu6l8wNURu9EUqyTk=";
+			};
+
+			outputHashAlgo = "sha256";
+			outputHashMode = "recursive";
+			outputHash = "sha256-uHbBbvPAwtG8UY6vQFesXyECkGQw6x0HwDGTstsSa8s=";
+
+			buildInputs = [ curl unzip ];
+
+			SSL_CERT_FILE="${cacert}/etc/ssl/certs/ca-bundle.crt";
+			buildPhase = lib.concatLines [
+				"bash -x get-landcover.sh"
+				"bash -x get-coastline.sh"
+
+				"mkdir -p $out"
+				"mv landcover $out"
+				"mv coastline $out"
+			];
+
+			dontInstall = true;
+		}
+	) {};
+	#---- External Sources
 
 	buildSpriteSheet = self.callPackage ./build-sprites.nix {};
 
@@ -115,31 +179,6 @@ makeScope newScope (self: {
 			styles = "${mapbox-gl-styles-fhs}/share/map/styles";
 		}) {};
 
-
-	fetchGeofabrik = self.callPackage ./fetch-geofabrik.nix {};
-	osm.germany = self.fetchGeofabrik {
-		name = "germany";
-		continent = "europe";
-		date = "230101";
-		sha256 = "sha256-G/9YWx4uEY6/yGVr2O5XqL6ivrlpX8Vs6xMlU2nT1DE=";
-	};
-
-	osm.hessen = self.fetchGeofabrik {
-		name = "hessen";
-		continent = "europe";
-		country = "germany";
-		date = "230101";
-		sha256 = "sha256-sOoPtIEY4TxSm/p0MGc9LGzQtQmIafGH0IWbkby95K8=";
-	};
-
-	osm.massachusetts = self.fetchGeofabrik {
-		name = "massachusetts";
-		continent = "north-america";
-		country = "us";
-		date = "240729";
-		sha256 = "sha256-CwxG44skIq1+q1GTF9P520xYalIojU/bywvT85Ye644=";
-	};
-
 	makeXyzTilesFromMbtiles = self.callPackage ./make-xyz-tiles.nix {};
 
 	mapbox-gl-styles-fhs-fonts-used = self.callPackage (
@@ -149,40 +188,5 @@ makeScope newScope (self: {
 		)
 		{};
 
-	tilemaker-shp-files = self.callPackage (
-		{ lib
-		, stdenvNoCC
-		, fetchFromGitHub
-		, curl
-		, cacert
-		, unzip
-		}: stdenvNoCC.mkDerivation {
-			name = "tilemaker-shp-files";
 
-			src = fetchFromGitHub {
-				owner = "systemed";
-				repo = "tilemaker";
-				rev = "eab08d189ad97ddf5db7d915bcabe42ad3dab6af";
-				hash = "sha256-A4I2xwB7E+7iwaLt8NGoAVrPLSmu6l8wNURu9EUqyTk=";
-			};
-
-		 	outputHashAlgo = "sha256";
-		 	outputHashMode = "recursive";
-		 	outputHash = "sha256-uHbBbvPAwtG8UY6vQFesXyECkGQw6x0HwDGTstsSa8s=";
-
-			buildInputs = [ curl unzip ];
-
-			SSL_CERT_FILE="${cacert}/etc/ssl/certs/ca-bundle.crt";
-			buildPhase = lib.concatLines [
-				"bash -x get-landcover.sh"
-				"bash -x get-coastline.sh"
-
-				"mkdir -p $out"
-				"mv landcover $out"
-				"mv coastline $out"
-			];
-
-			dontInstall = true;
-		}
-) {};
 })
