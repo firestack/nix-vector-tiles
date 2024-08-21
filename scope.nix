@@ -13,7 +13,7 @@ makeScope newScope (self: {
 		, mapbox-gl-styles
 		}: buildTileserverShare {
 			name = "";
-			styles = builtins.removeAttrs mapbox-gl-styles [ "override" "overrideDerivation" ];
+			styles = mapbox-gl-styles.styles;
 		}) {};
 
 	buildSpriteSheet = self.callPackage ./build-sprites.nix {};
@@ -27,7 +27,6 @@ makeScope newScope (self: {
 			optimize = false;
 		}) {};
 
-	# sprites = self.callPackage ({ buildSpriteSheetFromStyleRepo, mapbox-gl-styles}: buildSpriteSheetFromStyleRepo mapbox-gl-styles.osm-liberty) {};
 	sprites = self.callPackage (
 		{ linkFarm
 		, lib
@@ -41,7 +40,8 @@ makeScope newScope (self: {
 					mapbox-gl-styles.styles
 				)
 			)
-		) {};
+		)
+		{};
 
 	mapbox-gl-styles-fhs = self.callPackage (
 		{ lib
@@ -60,10 +60,7 @@ makeScope newScope (self: {
 						sprite = "{sprites}";
 					};
 				})
-				(builtins.removeAttrs
-					mapbox-gl-styles
-					[ "override" "overrideDerivation" ]
-				);
+				mapbox-gl-styles.styles;
 		}
 	) {};
 
