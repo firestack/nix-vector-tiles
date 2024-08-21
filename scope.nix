@@ -127,8 +127,10 @@ makeScope newScope (self: {
 		}
 	) {};
 
-
+	##### styles
 	buildTilesStyle = self.callPackage ./build-style.nix {};
+	#---- styles
+
 	usedFontsFromStyles = self.callPackage ./used-fonts-from-styles.nix {};
 
 	buildTilesFonts = self.callPackage ./build-fonts.nix {};
