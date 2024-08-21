@@ -73,6 +73,12 @@ makeScope newScope (self: {
 	) {};
 	#---- External Sources
 
+	##### Tiles
+	buildTiles = self.callPackage ./build-tiles.nix {};
+	buildTilesBundle = self.callPackage ./build-bundle.nix {};
+	buildTilesMetadata = self.callPackage ./build-metadata.nix {};
+	#---- Tiles
+
 	buildSpriteSheet = self.callPackage ./build-sprites.nix {};
 
 	buildSpriteSheetFromStyleRepo = self.callPackage (
@@ -136,11 +142,6 @@ makeScope newScope (self: {
 	# 		sources =
 	# 		styles = mapbox-gl-styles.styles;
 	# 	}) {};
-
-
-	buildTiles = self.callPackage ./build-tiles.nix {};
-	buildTilesBundle = self.callPackage ./build-bundle.nix {};
-	buildTilesMetadata = self.callPackage ./build-metadata.nix {};
 
 	tileset = self.callPackage (
 		{ buildTileserverShare
