@@ -57,7 +57,6 @@ makeScope newScope (self: {
 		}
 	) {};
 
-	# mapbox-gl-styles-package = lib.mapAttrs (name: style-src: ) self.mapbox-gl-styles;
 
 	buildTilesStyle = self.callPackage ./build-style.nix {};
 	usedFontsFromStyles = self.callPackage ./used-fonts-from-styles.nix {};
@@ -78,11 +77,6 @@ makeScope newScope (self: {
 	buildTiles = self.callPackage ./build-tiles.nix {};
 	buildTilesBundle = self.callPackage ./build-bundle.nix {};
 	buildTilesMetadata = self.callPackage ./build-metadata.nix {};
-
-	# noto-glyphs = self.callPackage ({ noto-fonts, build_pbf_glyphs, runCommand }:
-	# 	runCommand "noto-glyphs" {} (lib.concatLines [
-	# 		"${lib.getExe build_pbf_glyphs} ${noto-fonts}/share/fonts/noto $out/share/fonts/noto"
-	# 	])) {};
 
 	tileset = self.callPackage (
 		{ buildTileserverShare
