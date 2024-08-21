@@ -22,6 +22,7 @@ runCommand "used-styles.json"
 	"	| flatten(2)"
 	"	| unique"
 	"	' \\"
+	# TODO: convert this to a argument?
 	"${styles}/share/map/styles/*/style.json \\"
 	"> $out"
 ])
