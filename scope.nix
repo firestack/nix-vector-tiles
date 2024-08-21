@@ -79,6 +79,7 @@ makeScope newScope (self: {
 	buildTilesMetadata = self.callPackage ./build-metadata.nix {};
 	#---- Tiles
 
+	##### sprites
 	buildSpriteSheet = self.callPackage ./build-sprites.nix {};
 
 	buildSpriteSheetFromStyleRepo = self.callPackage (
@@ -106,6 +107,7 @@ makeScope newScope (self: {
 		)
 		{};
 
+	#---- sprites
 	mapbox-gl-styles-fhs = self.callPackage (
 		{ lib
 		,	symlinkJoin
