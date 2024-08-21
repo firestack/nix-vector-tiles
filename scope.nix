@@ -66,8 +66,10 @@ makeScope newScope (self: {
 
 	# mapbox-gl-styles-package = lib.mapAttrs (name: style-src: ) self.mapbox-gl-styles;
 
-	buildTilesFonts = self.callPackage ./build-fonts.nix {};
 	buildTilesStyle = self.callPackage ./build-style.nix {};
+	usedFontsFromStyles = self.callPackage ./used-fonts-from-styles.nix {};
+
+	buildTilesFonts = self.callPackage ./build-fonts.nix {};
 
 	buildTileserverShare = self.callPackage ./build-tileserver-gl-share.nix {};
 
@@ -142,8 +144,6 @@ makeScope newScope (self: {
 		sha256 = "sha256-CwxG44skIq1+q1GTF9P520xYalIojU/bywvT85Ye644=";
 	};
 
-	usedFontsFromStyles = self.callPackage ./used-fonts-from-styles.nix {
-	};
 	makeXyzTilesFromMbtiles = self.callPackage ./make-xyz-tiles.nix {};
 
 	mapbox-gl-styles-fhs-fonts-used = self.callPackage (
