@@ -142,12 +142,9 @@ makeScope newScope (self: {
 		sha256 = "sha256-CwxG44skIq1+q1GTF9P520xYalIojU/bywvT85Ye644=";
 	};
 
-	tilesDir = self.callPackage ./make-xyz-tiles.nix {
-		src = self.tiles;
-	};
-
 	usedFontsFromStyles = self.callPackage ./used-fonts-from-styles.nix {
 	};
+	makeXyzTilesFromMbtiles = self.callPackage ./make-xyz-tiles.nix {};
 
 	mapbox-gl-styles-fhs-fonts-used = self.callPackage (
 		{ usedFontsFromStyles

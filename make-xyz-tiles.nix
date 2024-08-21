@@ -1,8 +1,8 @@
 { lib
 , runCommand
 , mbutil
-
-, src
+}:
+{ src
 }: runCommand "${src.name}-tiles" {
 	buildInputs = [ mbutil ];
 } (lib.concatLines [
