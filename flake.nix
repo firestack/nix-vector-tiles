@@ -45,6 +45,13 @@
         in  {
           outputs = scope;
         } // scope;
+
+        checks = {
+          inherit
+            (self.legacyPackages.${system})
+            mapbox-gl-styles-fhs-fonts-used
+            tileset;
+        };
       };
     in
     (utils.lib.eachDefaultSystem buildForSystem);
