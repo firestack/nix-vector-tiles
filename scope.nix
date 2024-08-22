@@ -117,6 +117,7 @@ makeScope newScope (self: {
 	##### fonts
 	usedFontsFromStyles = self.callPackage ./used-fonts-from-styles.nix {};
 	buildTilesFonts = self.callPackage ./build-fonts.nix {};
+	buildSdfFonts = self.callPackage ./build-sdf-fonts.nix {};
 	#---- fonts
 
 
