@@ -139,6 +139,7 @@ makeScope newScope (self: {
 
 		, mapbox-gl-styles-fhs
 		, osm
+		, sprites
 
 		, noto-fonts
 		, roboto
@@ -167,7 +168,7 @@ makeScope newScope (self: {
 
 			styles = "${mapbox-gl-styles-fhs}/share/map/styles";
 
-			sprites = "$out";
+			sprites = sprites;
 		}) {};
 
 	makeXyzTilesFromMbtiles = self.callPackage ./make-xyz-tiles.nix {};
