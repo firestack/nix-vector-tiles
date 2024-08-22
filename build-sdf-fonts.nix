@@ -1,6 +1,6 @@
 { runCommand
 , lib
-, build-sdf-glyphs
+, build-pbf-glyphs
 }:
 { name ? "fonts-sdf"
 , fonts-dir
@@ -8,10 +8,11 @@
 runCommand
 	name
 	{
-		buildInputs = [build-sdf-glyphs];
+		buildInputs = [build-pbf-glyphs];
 	}
 	(lib.concatLines [
-		"build-pbf-glyphs \\"
+		"mkdir $out"
+		"build_pbf_glyphs \\"
 		"	${fonts-dir} \\"
 		"	$out"
 	])

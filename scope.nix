@@ -118,6 +118,12 @@ makeScope newScope (self: {
 	usedFontsFromStyles = self.callPackage ./used-fonts-from-styles.nix {};
 	buildTilesFonts = self.callPackage ./build-fonts.nix {};
 	buildSdfFonts = self.callPackage ./build-sdf-fonts.nix {};
+
+	noto = self.callPackage ({buildSdfFonts, noto-fonts}: buildSdfFonts {
+		name = "noto";
+		fonts-dir = "${noto-fonts}/share/fonts/noto";
+	}) {};
+
 	#---- fonts
 
 
