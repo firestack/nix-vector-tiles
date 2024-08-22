@@ -3,9 +3,15 @@
 , jq
 }:
 { styles
+, name ? "used-styles.json"
 }:
-runCommand "used-styles.json"
-{ buildInputs = [jq];}
+runCommand name
+{
+	buildInputs = [jq];
+	meta.description =
+		"Queries a map(libre|box)-gl-style files for the fonts"
+		+ " that are used";
+}
 (lib.concatLines [
 	"jq '"
 	"	["
