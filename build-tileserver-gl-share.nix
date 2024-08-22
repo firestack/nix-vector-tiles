@@ -10,8 +10,8 @@
 , styles
 , sprites
 }: linkFarm name {
-	"share/maps/vector/sources" = sources;
-	"share/maps/styles/maplibre-gl-style" = styles;
-	"share/maps/sprites" = sprites;
-	"share/sdf-fonts" = fonts;
+	"share/map/vector/sources" = sources;
+	"share/map/styles/maplibre-gl-style" = styles;
+	"share/map/sprites" = sprites;
+	"share/map/sdf-fonts" = fonts;
 }
