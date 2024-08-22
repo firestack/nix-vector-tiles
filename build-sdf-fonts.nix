@@ -12,7 +12,9 @@ runCommand
 	}
 	(lib.concatLines [
 		"mkdir $out"
+		"set -x"
 		"build_pbf_glyphs \\"
-		"	${fonts-dir} \\"
+		"	${fonts-dir}/ \\"
 		"	$out"
+		"set +x"
 	])

@@ -1,6 +1,7 @@
 { lib
 , makeScope
 , newScope
+, texlivePackages
 }:
 makeScope newScope (self: {
 	build-pbf-glyphs = self.callPackage ./packages/build-pbf-glyphs {};
@@ -119,10 +120,43 @@ makeScope newScope (self: {
 	buildTilesFonts = self.callPackage ./build-fonts.nix {};
 	buildSdfFonts = self.callPackage ./build-sdf-fonts.nix {};
 
-	noto = self.callPackage ({buildSdfFonts, noto-fonts}: buildSdfFonts {
+	font-dir = self.callPackage (
+		{ lib
+		, runCommand
+		, python3
+		, fontconfig
+		, fonts-dir
+		, wanted-fonts
+		}: runCommand "fonts-dir" {
+			buildInputs = [python3 fontconfig];
+		} (lib.concatLines [
+			"mkdir $out"
+			"python3 \\"
+			"	${./packages/link-fonts/link-fonts.py} \\"
+			"	${wanted-fonts} \\"
+			"	<(fc-scan \\"
+			"		--format '%{file}:%{fullname}\n' \\"
+			"		${fonts-dir}"
+			"	) \\"
+			"	$out"
+		])
+	) {
+		wanted-fonts = self.mapbox-gl-styles-fhs-fonts-used;
+		fonts-dir = self.fonts;
+	};
+
+	noto = self.callPackage ({buildSdfFonts, font-dir}: buildSdfFonts {
 		name = "noto";
-		fonts-dir = "${noto-fonts}/share/fonts/noto";
+		fonts-dir = font-dir;
 	}) {};
+
+
+	fonts = self.callPackage ({symlinkJoin, noto-fonts, roboto, nunito }: symlinkJoin {
+		name = "fonts";
+		paths = [noto-fonts roboto];
+	}) {
+		nunito = texlivePackages.nunito;
+	};
 
 	#---- fonts
 

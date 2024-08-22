@@ -20,25 +20,26 @@ stdenv.mkDerivation rec {
   buildInputs = [jq fontconfig];
 
   buildPhase = ''
-    export FONTCONFIG_FILE=${fontconfig.out}/etc/fonts/fonts.conf
-    export XDG_CACHE_HOME="$(pwd)/cache"
-    mkdir -p "$XDG_CACHE_HOME/fontconfig"
+    declare -A fonts
 
-    function build_font() {
-      IFS=: read -r ifile name <<< "$0"
-      ext=''${ifile##*.}
-      mkdir -p tmp-out
-      mkdir -p tmp-in
-      ln -s "$ifile" tmp-in/
-      ${lib.getExe build-pbf-glyphs} tmp-in/ tmp-out/
-      mv "tmp-out/$(basename $ifile .$ext)" "fonts/$name"
-      rm -r tmp-out
-      rm -r tmp-in
+    function append-font() {
+      IFS=: read -r font_file name <<< "$0"
+      fonts[$name] = $font_file
     }
-    export -f build_font
-    mkdir -p fonts
 
-    fc-scan ${src} --format "%{file}:%{fullname}\n" | xargs -n1 -d '\n' sh -c 'build_font "$@"'
+    font_list=$(fc-scan \
+      ${src} \
+      --format "%{file}:%{fullname}\n")
+
+    for font in $font_list; do
+      append-font $font
+    done
+
+    for font in wanted_fonts
+
+
+     ${lib.getExe build-pbf-glyphs} tmp-in/ tmp-out/
+
   '';
 
   installPhase = ''

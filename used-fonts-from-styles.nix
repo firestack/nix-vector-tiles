@@ -13,7 +13,7 @@ runCommand name
 		+ " that are used";
 }
 (lib.concatLines [
-	"jq '"
+	"jq -r '"
 	"	["
 	"		inputs"
 	"		| .layers[].layout.\"text-font\""
