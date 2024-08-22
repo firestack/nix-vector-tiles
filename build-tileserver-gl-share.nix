@@ -9,11 +9,9 @@
 , fonts
 , styles
 , sprites
-}: let
-	root = "share/maps/vector";
-in linkFarm name {
-	"${root}/sources"   = sources;
-	"${root}/styles"    = styles;
-	"${root}/sdf/fonts" = fonts;
-	"${root}/sprites"   = sprites;
+}: linkFarm name {
+	"share/maps/vector/sources" = sources;
+	"share/maps/map-gl-styles"  = styles;
+	"share/maps/sprites" = sprites;
+	"share/sdf-fonts" = fonts;
 }

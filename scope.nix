@@ -166,6 +166,8 @@ makeScope newScope (self: {
 			};
 
 			styles = "${mapbox-gl-styles-fhs}/share/map/styles";
+
+			sprites = "$out";
 		}) {};
 
 	makeXyzTilesFromMbtiles = self.callPackage ./make-xyz-tiles.nix {};
