@@ -25,7 +25,6 @@ class FontGroup:
 		return [FontGroup.from_string(line) for line in lines.splitlines()]
 
 	def symlink(self, output_directory: Path):
-
 		out_path = Path(os.path.join(output_directory, self.name)).with_suffix(Path(self.path).suffix)
 		os.symlink(os.path.realpath(self.path), out_path)
 
