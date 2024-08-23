@@ -120,12 +120,55 @@ makeScope newScope (self: {
 	reduceFontsToMatchStyles = self.callPackage (
 		./link-fonts-from-list.nix
 	) {
-		wanted-fonts = self.mapbox-gl-styles-fhs-fonts-used;
-		fonts-dir = self.fonts;
+		# wanted-fonts = self.mapbox-gl-styles-fhs-fonts-used;
+		# fonts-dir = self.fonts;
 	};
 
 	buildTilesFonts = self.callPackage ./build-fonts.nix {};
 	buildSdfFonts = self.callPackage ./build-sdf-fonts.nix {};
+	buildFontsForStyles = self.callPackage (
+		{ lib
+		, symlinkJoin
+		, buildSdfFonts
+		, buildStylesFHS
+		, usedFontsFromStyles
+		, reduceFontsToMatchStyles
+		}:
+		{ name ? "sdf-fonts"
+		, fonts
+		, styles
+		}: buildSdfFonts {
+			name = name;
+			fonts-dir = reduceFontsToMatchStyles {
+				name = name + ".used-fonts";
+				wanted-fonts = usedFontsFromStyles {
+					name = name + ".wanted-fonts";
+					styles = buildStylesFHS { inherit styles; };
+				};
+				fonts-dir = symlinkJoin {
+					name = name + ".input-fonts";
+					paths = fonts;
+				};
+			};
+		}
+	) {};
+
+	test = self.callPackage (
+		{ buildFontsForStyles
+		, mapbox-gl-styles
+		, noto-fonts
+		, roboto
+		}: buildFontsForStyles {
+			fonts = [noto-fonts roboto];
+			# styles = mapbox-gl-styles.styles;
+			styles = {
+				inherit (mapbox-gl-styles.styles)
+					maptiler-basic-gl-style
+					osm-bright-gl-style;
+			};
+		}
+	) {};
+
 	noto = self.callPackage ({buildSdfFonts, font-dir}: buildSdfFonts {
 		name = "noto";
 		fonts-dir = font-dir;
@@ -193,11 +236,12 @@ makeScope newScope (self: {
 		)
 		{};
 
-	mapbox-gl-styles-fhs = self.callPackage (
+	buildStylesFHS = self.callPackage (
 		{ lib
 		,	symlinkJoin
 		,	buildTilesStyle
-		,	mapbox-gl-styles
+		}:
+		{ styles
 		}: symlinkJoin {
 			name = "mapbox-gl-styles-fhs";
 			paths = lib.mapAttrsToList
@@ -210,7 +254,7 @@ makeScope newScope (self: {
 						sprite = "{sprites}";
 					};
 				})
-				mapbox-gl-styles.styles;
+				styles;
 		}
 	) {};
 
