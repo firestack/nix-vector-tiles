@@ -130,15 +130,6 @@ makeScope newScope (self: {
 		name = "noto";
 		fonts-dir = font-dir;
 	}) {};
-
-
-	fonts = self.callPackage ({symlinkJoin, noto-fonts, roboto, nunito }: symlinkJoin {
-		name = "fonts";
-		paths = [noto-fonts roboto];
-	}) {
-		nunito = texlivePackages.nunito;
-	};
-
 	#---- fonts
 
 
