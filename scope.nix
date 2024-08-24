@@ -9,7 +9,7 @@ makeScope newScope (self: {
 
 	fetchGeofabrik = self.callPackage ./fetch-geofabrik.nix {};
 
-	##### External Sources
+	#region External Sources
 	mapbox-gl-styles = self.callPackage ./styles.nix {};
 
 	osm.germany = self.fetchGeofabrik {
@@ -71,7 +71,7 @@ makeScope newScope (self: {
 			dontInstall = true;
 		}
 	) {};
-	#---- External Sources
+	#endregion External Sources
 
 	##### Tiles
 	buildTiles = self.callPackage ./build-tiles.nix {};
@@ -125,7 +125,7 @@ makeScope newScope (self: {
 
 	buildTilesFonts = self.callPackage ./build-fonts.nix {};
 	buildSdfFonts = self.callPackage ./build-sdf-fonts.nix {};
-	buildFontsForStyles = self.callPackage (
+	buildSdfFontsForStyles = self.callPackage (
 		{ lib
 		, symlinkJoin
 		, buildSdfFonts
@@ -153,11 +153,11 @@ makeScope newScope (self: {
 	) {};
 
 	test = self.callPackage (
-		{ buildFontsForStyles
+		{ buildSdfFontsForStyles
 		, mapbox-gl-styles
 		, noto-fonts
 		, roboto
-		}: buildFontsForStyles {
+		}: buildSdfFontsForStyles {
 			fonts = [noto-fonts roboto];
 			# styles = mapbox-gl-styles.styles;
 			styles = {
@@ -167,11 +167,6 @@ makeScope newScope (self: {
 			};
 		}
 	) {};
-
-	noto = self.callPackage ({buildSdfFonts, font-dir}: buildSdfFonts {
-		name = "noto";
-		fonts-dir = font-dir;
-	}) {};
 	#---- fonts
 
 
