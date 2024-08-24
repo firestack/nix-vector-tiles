@@ -1,7 +1,6 @@
 { lib
 , makeScope
 , newScope
-, texlivePackages
 }:
 makeScope newScope (self: {
 	build-pbf-glyphs = self.callPackage ./packages/build-pbf-glyphs {};
