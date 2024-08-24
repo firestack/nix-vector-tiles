@@ -159,7 +159,6 @@ makeScope newScope (self: {
 		, roboto
 		}: buildSdfFontsForStyles {
 			fonts = [noto-fonts roboto];
-			# styles = mapbox-gl-styles.styles;
 			styles = {
 				inherit (mapbox-gl-styles.styles)
 					maptiler-basic-gl-style

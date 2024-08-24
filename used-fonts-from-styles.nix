@@ -2,6 +2,7 @@
 , runCommand
 , jq
 }:
+# Single package containing merged FHS
 { styles
 , name ? "used-styles.json"
 }:
