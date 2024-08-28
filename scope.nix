@@ -253,5 +253,23 @@ makeScope newScope (self: {
 
 	#---- www
 
+	# metadataFnFn = config: tilesUrl:
+	#   pkgs.buildTilesMetadata {
+	#     tileJson = {tiles = [tilesUrl];};
+	#     tiles = pkgs.buildTiles {
+	#       inherit config;
+	#       inherit (hessen) name;
+	#       renumber = true;
+	#       src = pkgs.fetchGeofabrik massachusetts;
+	#     };
+	#   };
 
+	# tiles-demo = style:
+	#   (pkgs.callPackage ./demo.nix {}) {
+	#     bundle = pkgs.buildTilesBundle {
+	#       metadataFn = metadataFnFn {};
+	#       host = "http://127.0.0.1:8081";
+	#       styleFn = style;
+	#     };
+	#   };
 })

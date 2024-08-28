@@ -16,27 +16,6 @@
   }: let
     buildForSystem = system: let
       pkgs = nixpkgs.legacyPackages.${system};
-
-      # metadataFnFn = config: tilesUrl:
-      #   pkgs.buildTilesMetadata {
-      #     tileJson = {tiles = [tilesUrl];};
-      #     tiles = pkgs.buildTiles {
-      #       inherit config;
-      #       inherit (hessen) name;
-      #       renumber = true;
-      #       src = pkgs.fetchGeofabrik massachusetts;
-      #     };
-      #   };
-
-      # tiles-demo = style:
-      #   (pkgs.callPackage ./demo.nix {}) {
-      #     bundle = pkgs.buildTilesBundle {
-      #       metadataFn = metadataFnFn {};
-      #       host = "http://127.0.0.1:8081";
-      #       styleFn = style;
-      #     };
-      #   };
-
     in {
         legacyPackages = let
           scope = pkgs.callPackage ./scope.nix {
