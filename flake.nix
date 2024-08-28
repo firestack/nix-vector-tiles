@@ -16,6 +16,7 @@
   }: let
     buildForSystem = system: let
       pkgs = nixpkgs.legacyPackages.${system};
+      legacyPackages' = self.legacyPackages.${system};
     in {
         legacyPackages = let
           scope = pkgs.callPackage ./scope.nix {
@@ -27,7 +28,7 @@
 
         checks = {
           inherit
-            (self.legacyPackages.${system})
+            (legacyPackages')
             mapbox-gl-styles-fhs-fonts-used
             tileset;
         };
