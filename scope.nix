@@ -225,28 +225,28 @@ makeScope newScope (self: {
 
 		, noto-fonts
 		, roboto
-		}: buildTileserverShare {
+		}: let
+			# styles =
+		in buildTileserverShare {
 			name = "tiles-test";
 
-			sources = linkFarm "sources" {
-				"mass.pmtiles" = buildTiles {
-					renumber = true;
-					src = osm.massachusetts;
-					name = osm.massachusetts.name;
-				};
+			sources."mass.pmtiles" = buildTiles {
+				renumber = true;
+				src = osm.massachusetts;
+				name = osm.massachusetts.name;
 			};
 
-			fonts = linkFarm "font-glphs" {
-				# noto = buildTilesFonts {
-				# 	name = "noto";
-				# 	fonts = [noto-fonts];
-				# };
-				#
-				# roboto = buildTilesFonts {
-				# 	name = "roboto";
-				# 	fonts = [roboto];
-				# };
-			};
+			# fonts = linkFarm "font-glphs" {
+			# 	# noto = buildTilesFonts {
+			# 	# 	name = "noto";
+			# 	# 	fonts = [noto-fonts];
+			# 	# };
+			# 	#
+			# 	# roboto = buildTilesFonts {
+			# 	# 	name = "roboto";
+			# 	# 	fonts = [roboto];
+			# 	# };
+			# };
 
 			styles = "${mapbox-gl-styles-fhs}/share/map/styles";
 
