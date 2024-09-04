@@ -219,14 +219,14 @@ makeScope newScope (self: {
 		, buildTilesFonts
 		, linkFarm
 
-		, mapbox-gl-styles-fhs
+		# , mapbox-gl-styles-fhs
 		, osm
 		, sprites
 
 		, noto-fonts
 		, roboto
 		}: let
-			# styles =
+			styles = buildStylesFHS { inherit styles };
 		in buildTileserverShare {
 			name = "tiles-test";
 
