@@ -14,9 +14,9 @@
       self' = pkgs.callPackage ./scope.nix { makeScope = pkgs.lib.makeScope; };
 
       metadataFnFn = config: tilesUrl:
-        pkgs.buildTilesMetadata {
+        self'.buildTilesMetadata {
           tileJson = {tiles = [tilesUrl];};
-          tiles = pkgs.buildTiles {
+          tiles = self'.buildTiles {
             inherit config;
             inherit (self'.massachusetts) name;
             renumber = true;
@@ -25,14 +25,14 @@
         };
       tiles-demo = style:
         (pkgs.callPackage ./demo.nix {}) {
-          bundle = pkgs.buildTilesBundle {
+          bundle = self'.buildTilesBundle {
             metadataFn = metadataFnFn {};
             host = "http://127.0.0.1:8081";
             styleFn = style;
           };
         };
       tiles-nginx-bundle = style:
-        pkgs.buildTilesBundle {
+        self'.buildTilesBundle {
           metadataFn = metadataFnFn {settings.compress = "gzip";};
           host = "http://127.0.0.1:8080";
           styleFn = style;
@@ -64,11 +64,11 @@
           key: {
             "demo-local-${key}" = {
               type = "app";
-              program = "${tiles-demo pkgs.tilesStyles.${key}}/bin/demo";
+              program = "${tiles-demo self'.tilesStyles.${key}}/bin/demo";
             };
             "demo-nginx-${key}" = {
               type = "app";
-              program = "${vm-builder (tiles-nginx-bundle pkgs.tilesStyles.${key})}/bin/run-nixos-vm";
+              program = "${vm-builder (tiles-nginx-bundle self'.tilesStyles.${key})}/bin/run-nixos-vm";
             };
           }
         ) [
