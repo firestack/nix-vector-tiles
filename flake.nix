@@ -19,36 +19,14 @@
       pkgs = nixpkgs.legacyPackages.${system};
       self' = pkgs.callPackage ./scope.nix { makeScope = pkgs.lib.makeScope; };
 
-      germany = {
-        name = "germany";
-        continent = "europe";
-        date = "230101";
-        sha256 = "sha256-G/9YWx4uEY6/yGVr2O5XqL6ivrlpX8Vs6xMlU2nT1DE=";
-      };
-
-      hessen = {
-        name = "hessen";
-        continent = "europe";
-        country = "germany";
-        date = "230101";
-        sha256 = "sha256-sOoPtIEY4TxSm/p0MGc9LGzQtQmIafGH0IWbkby95K8=";
-      };
-
-		massachusetts = {
-			name = "massachusetts";
-			continent = "north-america";
-			country = "us";
-			date = "240729";
-			sha256 = "sha256-CwxG44skIq1+q1GTF9P520xYalIojU/bywvT85Ye644=";
-		};
       metadataFnFn = config: tilesUrl:
         pkgs.buildTilesMetadata {
           tileJson = {tiles = [tilesUrl];};
           tiles = pkgs.buildTiles {
             inherit config;
-            inherit (hessen) name;
+            inherit (self'.massachusetts) name;
             renumber = true;
-            src = pkgs.fetchGeofabrik massachusetts;
+            src = self'.massachusetts;
           };
         };
       tiles-demo = style:
