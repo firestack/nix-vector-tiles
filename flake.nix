@@ -23,6 +23,7 @@
             src = self'.massachusetts;
           };
         };
+
       tiles-demo = style:
         (self'.buildDemo) {
           bundle = self'.buildTilesBundle {
@@ -31,12 +32,14 @@
             styleFn = style;
           };
         };
+
       tiles-nginx-bundle = style:
         self'.buildTilesBundle {
           metadataFn = metadataFnFn {settings.compress = "gzip";};
           host = "http://127.0.0.1:8080";
           styleFn = style;
         };
+
       vm-builder = bundle:
         (
           nixpkgs.lib.nixosSystem
