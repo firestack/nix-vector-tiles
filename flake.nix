@@ -24,7 +24,7 @@
           };
         };
       tiles-demo = style:
-        (pkgs.callPackage ./demo.nix {}) {
+        (self'.buildDemo) {
           bundle = self'.buildTilesBundle {
             metadataFn = metadataFnFn {};
             host = "http://127.0.0.1:8081";

@@ -37,4 +37,6 @@ makeScope newScope (self: {
 		date = "240101";
 		sha256 = "sha256-qy2uQnHf8leLPaf3tvu8Pp5UiOapSaUfBXtcu8Kgz4o=";
 	};
+
+	buildDemo = self.callPackage ./demo.nix {};
 })
