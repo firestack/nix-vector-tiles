@@ -3,6 +3,7 @@
 }:
 makeScope newScope (self: {
 	build_pbf_glyphs = self.callPackage ./packages/build-pbf-glyphs {};
+	map-sprite-packer = self.callPackage ./packages/map-sprite-packer {};
 
 	fetchGeofabrik = self.callPackage ./fetch-geofabrik.nix {};
 	buildTiles = self.callPackage ./build-tiles.nix {};
