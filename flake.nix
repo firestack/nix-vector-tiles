@@ -15,8 +15,6 @@
     utils,
     map-sprite-packer,
   }: let
-    buildRustPkgs = pkgs:
-      pkgs.callPackage ./packages/build-pbf-glyphs {};
     buildForSystem = system: let
       overlays = [self.overlays.default];
       pkgs = import nixpkgs {inherit system overlays;};
@@ -84,7 +82,7 @@
         .vm;
     in {
       packages = {
-        inherit (pkgs) build_pbf_glyphs;
+        inherit (self') build_pbf_glyphs;
       };
       legacyPackages = {
         # styles = lib.mapAttrs () pkgs.tilesStyles
@@ -122,7 +120,6 @@
           self.overlays.packages
         ];
         packages = final: prev: {
-          build_pbf_glyphs = buildRustPkgs prev;
           fetchGeofabrik = prev.callPackage ./fetch-geofabrik.nix {};
           buildTiles = prev.callPackage ./build-tiles.nix {};
           buildTilesBundle = prev.callPackage ./build-bundle.nix {};
