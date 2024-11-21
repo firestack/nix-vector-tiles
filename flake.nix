@@ -56,9 +56,6 @@
         .build
         .vm;
     in {
-      packages = {
-        inherit (self') build_pbf_glyphs;
-      };
       legacyPackages = self';
       apps = builtins.foldl' (left: right: left // right) {} (map (
           key: {
