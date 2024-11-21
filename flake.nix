@@ -16,15 +16,16 @@
     map-sprite-packer,
   }: let
     buildForSystem = system: let
-      overlays = [self.overlays.default];
-      pkgs = import nixpkgs {inherit system overlays;};
+      pkgs = nixpkgs.legacyPackages.${system};
       self' = pkgs.callPackage ./scope.nix { makeScope = pkgs.lib.makeScope; };
+
       germany = {
         name = "germany";
         continent = "europe";
         date = "230101";
         sha256 = "sha256-G/9YWx4uEY6/yGVr2O5XqL6ivrlpX8Vs6xMlU2nT1DE=";
       };
+
       hessen = {
         name = "hessen";
         continent = "europe";
@@ -70,7 +71,6 @@
           {
             system = "x86_64-linux";
             modules = [
-              {nixpkgs.overlays = overlays;}
               "${nixpkgs}/nixos/modules/virtualisation/qemu-vm.nix"
               (import ./demo-nginx.nix {inherit bundle;})
             ];
@@ -111,23 +111,5 @@
           "osm-liberty"
         ]);
     };
-  in
-    (utils.lib.eachDefaultSystem buildForSystem)
-    // {
-      overlays = {
-        default = nixpkgs.lib.composeManyExtensions [
-          map-sprite-packer.overlays.default
-          self.overlays.packages
-        ];
-        packages = final: prev: {
-          fetchGeofabrik = prev.callPackage ./fetch-geofabrik.nix {};
-          buildTiles = prev.callPackage ./build-tiles.nix {};
-          buildTilesBundle = prev.callPackage ./build-bundle.nix {};
-          buildTilesFonts = prev.callPackage ./build-fonts.nix {};
-          buildTilesStyle = prev.callPackage ./build-style.nix {};
-          buildTilesMetadata = prev.callPackage ./build-metadata.nix {};
-          tilesStyles = final.callPackage ./styles.nix {};
-        };
-      };
-    };
+  in (utils.lib.eachDefaultSystem buildForSystem);
 }
