@@ -57,28 +57,24 @@
         .vm;
     in {
       legacyPackages = self';
-      apps = builtins.foldl' (left: right: left // right) {} (map (
-          key: {
-            "demo-local-${key}" = {
-              type = "app";
-              program = "${tiles-demo self'.tilesStyles.${key}}/bin/demo";
-            };
-            "demo-nginx-${key}" = {
-              type = "app";
-              program = "${vm-builder (tiles-nginx-bundle self'.tilesStyles.${key})}/bin/run-nixos-vm";
-            };
-          }
-        ) [
-          "maptiler-basic-gl-style"
-          "osm-bright-gl-style"
-          "positron-gl-style"
-          "dark-matter-gl-style"
-          "maptiler-terrain-gl-style"
-          "maptiler-3d-gl-style"
-          "fiord-color-gl-style"
-          "maptiler-toner-gl-style"
-          "osm-liberty"
-        ]);
+      apps = let
+        mergeAttrs = builtins.foldl' (left: right: left // right) {};
+        stylesKeys = (
+          builtins.attrNames
+          (builtins.removeAttrs
+            self'.tilesStyles
+            ["override" "overrideDerivation"]));
+        mapTilesStyles = fn: map (key: fn key self'.tilesStyles.${key}) stylesKeys;
+      in mergeAttrs (mapTilesStyles (key: style: {
+        "demo-local-${key}" = {
+          type = "app";
+          program = "${tiles-demo style}/bin/demo";
+        };
+        "demo-nginx-${key}" = {
+          type = "app";
+          program = "${vm-builder (tiles-nginx-bundle style)}/bin/run-nixos-vm";
+        };
+      }));
     };
   in (utils.lib.eachDefaultSystem buildForSystem);
 }
