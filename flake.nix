@@ -102,7 +102,7 @@
       };
       apps = builtins.foldl' (left: right: left // right) {} (map (
           key: {
-            "demo-${key}" = {
+            "demo-local-${key}" = {
               type = "app";
               program = "${tiles-demo pkgs.tilesStyles.${key}}/bin/demo";
             };
