@@ -1,5 +1,5 @@
 {
-  description = "A rust project";
+  description = "Build Vector Tilesets and Serve with Styles, fonts, and sprites via Nix";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
     utils.url = "github:numtide/flake-utils";
