@@ -26,5 +26,7 @@ rustPlatform.buildRustPackage {
 	buildInputs = [
 		freetype
 	];
+
+	meta.mainProgram = "build_pbf_glyphs";
 }
 
