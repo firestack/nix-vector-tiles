@@ -4,7 +4,7 @@
   jq,
   symlinkJoin,
   moreutils,
-  map-sprite-packer,
+  map-sprite-packer ? null,
   optipng,
 }: {
   name,
@@ -23,7 +23,7 @@
     if spriteDirectories != null
     then (builtins.foldl' (a: b: a + b) "" (map (dir: " --svgs ${dir}") spriteDirectories))
     else "";
-  shouldPack = spriteDirectories != null;
+  shouldPack = map-sprite-packer != null && spriteDirectories != null;
 in
   stdenv.mkDerivation {
     inherit name src;
