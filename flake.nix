@@ -3,17 +3,11 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
     utils.url = "github:numtide/flake-utils";
-    map-sprite-packer = {
-      url = "github:jmpunkt/map-sprite-packer";
-      inputs.nixpkgs.follows = "/nixpkgs";
-      inputs.utils.follows = "utils";
-    };
   };
   outputs = {
     self,
     nixpkgs,
     utils,
-    map-sprite-packer,
   }: let
     buildRustPkgs = pkgs:
       pkgs.callPackage ./packages/build-pbf-glyphs {};
@@ -118,7 +112,6 @@
     // {
       overlays = {
         default = nixpkgs.lib.composeManyExtensions [
-          map-sprite-packer.overlays.default
           self.overlays.packages
         ];
         packages = final: prev: {
