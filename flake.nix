@@ -74,13 +74,14 @@
       checks = self.packages.${system};
 
       apps = let
+			tilesStyles = self'.tilesStyles.styles;
         mergeAttrs = builtins.foldl' (left: right: left // right) {};
         stylesKeys = (
           builtins.attrNames
           (builtins.removeAttrs
-            self'.tilesStyles
+				tilesStyles
             ["override" "overrideDerivation"]));
-        mapTilesStyles = fn: map (key: fn key self'.tilesStyles.${key}) stylesKeys;
+        mapTilesStyles = fn: map (key: fn key tilesStyles.${key}) stylesKeys;
       in mergeAttrs (mapTilesStyles (key: style: {
         "demo-local-${key}" = {
           type = "app";
