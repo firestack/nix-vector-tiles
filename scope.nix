@@ -40,5 +40,7 @@ makeScope newScope (self: {
 
 	tilemaker-shp-files = self.callPackage ./tilemaker-shp-files.nix {};
 
+	tilemaker-shp-files-runcommand = self.callPackage ./tilemaker-shp-files-runcommand.nix {};
+
 	buildDemo = self.callPackage ./demo.nix {};
 })
