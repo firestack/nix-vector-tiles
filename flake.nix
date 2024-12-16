@@ -57,6 +57,22 @@
         .vm;
     in {
       legacyPackages = self';
+
+      packages = let
+        tilesStyles = builtins.mapAttrs
+          (key: value: tiles-nginx-bundle value)
+          (pkgs.lib.attrsets.filterAttrs
+            (x: _:
+              if x == "override" then false
+              else if x == "overrideDerivation" then false
+              else true
+            )
+            (self'.tilesStyles)
+          );
+      in tilesStyles;
+
+      checks = self.packages.${system};
+
       apps = let
         mergeAttrs = builtins.foldl' (left: right: left // right) {};
         stylesKeys = (
