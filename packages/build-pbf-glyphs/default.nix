@@ -17,7 +17,7 @@ rustPlatform.buildRustPackage {
 	};
 	cargoBuildFlags = "-p build_pbf_glyphs";
 
-	cargoSha256 = "sha256-m+ysA7fJqytFbSdPPNl6TQj6QAft13bO89LboTwb0uU=";
+	cargoHash = "sha256-m+ysA7fJqytFbSdPPNl6TQj6QAft13bO89LboTwb0uU=";
 
 	nativeBuildInputs = [
 		protobuf
