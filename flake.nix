@@ -60,14 +60,14 @@
 
       packages = let
         tilesStyles = builtins.mapAttrs
-          (key: value: tiles-nginx-bundle value)
+          (key: value: value)
           (pkgs.lib.attrsets.filterAttrs
             (x: _:
               if x == "override" then false
               else if x == "overrideDerivation" then false
               else true
             )
-            (self'.tilesStyles)
+            (self'.tilesStyles.styles)
           );
       in tilesStyles;
 
